@@ -1,0 +1,773 @@
+Config file config/snakebids.yml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+applyfidmodel            24
+mni2subfids              18
+n4_bias_correction        1
+norm_im                   6
+regmni2sub               16
+resample_im              10
+total                    76
+
+Select jobs to execute...
+
+[Fri Apr 10 09:07:44 2026]
+rule regmni2sub:
+    input: work/sub-C008/n4biascorr/sub-C008_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_slicer.mat, work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_xfm.txt, work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 49
+    reason: Missing output files: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C008, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:44 2026]
+rule regmni2sub:
+    input: work/sub-C033/n4biascorr/sub-C033_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_slicer.mat, work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_xfm.txt, work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 199
+    reason: Missing output files: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C033, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:44 2026]
+rule regmni2sub:
+    input: work/sub-C003/n4biascorr/sub-C003_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_slicer.mat, work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_xfm.txt, work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 19
+    reason: Missing output files: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C003, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:44 2026]
+rule regmni2sub:
+    input: work/sub-C013/n4biascorr/sub-C013_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_slicer.mat, work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_xfm.txt, work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 79
+    reason: Missing output files: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C013, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:44 2026]
+rule resample_im:
+    input: work/sub-C006/normalize/sub-C006_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C006/resample/sub-C006_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 33
+    reason: Missing output files: work/sub-C006/resample/sub-C006_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C006, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:44 2026]
+rule norm_im:
+    input: work/sub-C019/n4biascorr/sub-C019_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C019/normalize/sub-C019_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 112
+    reason: Missing output files: work/sub-C019/normalize/sub-C019_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C019, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:44 2026]
+rule mni2subfids:
+    input: work/sub-C025/registration/sub-C025_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C025/registration/sub-C025_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 150
+    reason: Missing output files: work/sub-C025/registration/sub-C025_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C025, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:45 2026]
+rule resample_im:
+    input: work/sub-C033/normalize/sub-C033_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C033/resample/sub-C033_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 195
+    reason: Missing output files: work/sub-C033/resample/sub-C033_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C033, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:45 2026]
+rule mni2subfids:
+    input: work/sub-C010/registration/sub-C010_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C010/registration/sub-C010_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 60
+    reason: Missing output files: work/sub-C010/registration/sub-C010_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C010, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:45 2026]
+rule resample_im:
+    input: work/sub-C028/normalize/sub-C028_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C028/resample/sub-C028_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 165
+    reason: Missing output files: work/sub-C028/resample/sub-C028_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C028, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:45 2026]
+rule regmni2sub:
+    input: work/sub-C023/n4biascorr/sub-C023_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_slicer.mat, work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_xfm.txt, work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 139
+    reason: Missing output files: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C023, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:07:45 2026]
+rule regmni2sub:
+    input: work/sub-C028/n4biascorr/sub-C028_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_slicer.mat, work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_xfm.txt, work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 169
+    reason: Missing output files: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C028, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:07:48 2026]
+Finished job 150.
+1 of 76 steps (1%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:07:48 2026]
+rule n4_bias_correction:
+    input: /local/scratch/t1w_images/sub-C004/anat/sub-C004_acq-MP2RAGE_T1w.nii.gz
+    output: work/sub-C004/n4biascorr/sub-C004_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    jobid: 23
+    reason: Missing output files: work/sub-C004/n4biascorr/sub-C004_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=C004, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:07:48 2026]
+Finished job 60.
+2 of 76 steps (3%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:07:48 2026]
+rule regmni2sub:
+    input: work/sub-C007/n4biascorr/sub-C007_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C007/registration/sub-C007_acq-MP2RAGE_space-native_slicer.mat, work/sub-C007/registration/sub-C007_acq-MP2RAGE_space-native_xfm.txt, work/sub-C007/registration/sub-C007_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 43
+    reason: Missing output files: work/sub-C007/registration/sub-C007_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C007, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:07:50 2026]
+Finished job 112.
+3 of 76 steps (4%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:07:50 2026]
+rule resample_im:
+    input: work/sub-C019/normalize/sub-C019_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C019/resample/sub-C019_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 111
+    reason: Missing output files: work/sub-C019/resample/sub-C019_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-C019/normalize/sub-C019_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C019, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Apr 10 09:08:13 2026]
+Finished job 33.
+4 of 76 steps (5%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:13 2026]
+rule norm_im:
+    input: work/sub-C017/n4biascorr/sub-C017_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C017/normalize/sub-C017_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 100
+    reason: Missing output files: work/sub-C017/normalize/sub-C017_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C017, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:08:14 2026]
+Finished job 165.
+5 of 76 steps (7%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:14 2026]
+rule norm_im:
+    input: work/sub-C027/n4biascorr/sub-C027_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C027/normalize/sub-C027_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 160
+    reason: Missing output files: work/sub-C027/normalize/sub-C027_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C027, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:08:15 2026]
+Finished job 195.
+6 of 76 steps (8%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:15 2026]
+rule applyfidmodel:
+    input: work/sub-C010/resample/sub-C010_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C010/registration/sub-C010_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C010/afids-cnn/sub-C010_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C010/sub-C010_acq-MP2RAGE_landmark.log
+    jobid: 56
+    reason: Missing output files: sub-C010/afids-cnn/sub-C010_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C010/registration/sub-C010_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C010, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:08:23 2026]
+Finished job 79.
+7 of 76 steps (9%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:23 2026]
+rule norm_im:
+    input: work/sub-C029/n4biascorr/sub-C029_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C029/normalize/sub-C029_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 172
+    reason: Missing output files: work/sub-C029/normalize/sub-C029_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C029, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:08:23 2026]
+Finished job 49.
+8 of 76 steps (11%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:23 2026]
+rule applyfidmodel:
+    input: work/sub-C025/resample/sub-C025_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C025/registration/sub-C025_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C025/afids-cnn/sub-C025_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C025/sub-C025_acq-MP2RAGE_landmark.log
+    jobid: 146
+    reason: Missing output files: sub-C025/afids-cnn/sub-C025_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C025/registration/sub-C025_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C025, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:08:23 2026]
+Finished job 139.
+9 of 76 steps (12%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:23 2026]
+rule norm_im:
+    input: work/sub-C009/n4biascorr/sub-C009_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C009/normalize/sub-C009_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 52
+    reason: Missing output files: work/sub-C009/normalize/sub-C009_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C009, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:08:23 2026]
+Finished job 100.
+10 of 76 steps (13%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:24 2026]
+rule regmni2sub:
+    input: work/sub-C031/n4biascorr/sub-C031_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C031/registration/sub-C031_acq-MP2RAGE_space-native_slicer.mat, work/sub-C031/registration/sub-C031_acq-MP2RAGE_space-native_xfm.txt, work/sub-C031/registration/sub-C031_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 187
+    reason: Missing output files: work/sub-C031/registration/sub-C031_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C031, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:24 2026]
+Finished job 19.
+11 of 76 steps (14%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:24 2026]
+rule resample_im:
+    input: work/sub-C024/normalize/sub-C024_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C024/resample/sub-C024_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 141
+    reason: Missing output files: work/sub-C024/resample/sub-C024_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C024, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Apr 10 09:08:24 2026]
+Finished job 111.
+12 of 76 steps (16%) done
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+
+[Fri Apr 10 09:08:24 2026]
+rule regmni2sub:
+    input: work/sub-C011/n4biascorr/sub-C011_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C011/registration/sub-C011_acq-MP2RAGE_space-native_slicer.mat, work/sub-C011/registration/sub-C011_acq-MP2RAGE_space-native_xfm.txt, work/sub-C011/registration/sub-C011_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 67
+    reason: Missing output files: work/sub-C011/registration/sub-C011_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C011, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:24 2026]
+Finished job 160.
+13 of 76 steps (17%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:24 2026]
+rule resample_im:
+    input: work/sub-C027/normalize/sub-C027_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C027/resample/sub-C027_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 159
+    reason: Missing output files: work/sub-C027/resample/sub-C027_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-C027/normalize/sub-C027_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C027, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:08:25 2026]
+Finished job 169.
+14 of 76 steps (18%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:25 2026]
+rule applyfidmodel:
+    input: work/sub-C019/resample/sub-C019_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C019/registration/sub-C019_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C019/afids-cnn/sub-C019_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C019/sub-C019_acq-MP2RAGE_landmark.log
+    jobid: 110
+    reason: Missing output files: sub-C019/afids-cnn/sub-C019_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C019/resample/sub-C019_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C019, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:08:25 2026]
+Finished job 199.
+15 of 76 steps (20%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:25 2026]
+rule applyfidmodel:
+    input: work/sub-C014/resample/sub-C014_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C014/registration/sub-C014_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C014/sub-C014_acq-MP2RAGE_landmark.log
+    jobid: 80
+    reason: Missing output files: sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    wildcards: subject=C014, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:08:28 2026]
+Finished job 43.
+16 of 76 steps (21%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:29 2026]
+rule mni2subfids:
+    input: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 198
+    reason: Missing output files: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C033, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:31 2026]
+Finished job 172.
+17 of 76 steps (22%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:31 2026]
+rule mni2subfids:
+    input: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 168
+    reason: Missing output files: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C028, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:33 2026]
+Finished job 198.
+18 of 76 steps (24%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:33 2026]
+rule mni2subfids:
+    input: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 18
+    reason: Missing output files: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C003, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:33 2026]
+Finished job 52.
+19 of 76 steps (25%) done
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+
+[Fri Apr 10 09:08:33 2026]
+rule mni2subfids:
+    input: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 48
+    reason: Missing output files: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C008, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:36 2026]
+Finished job 168.
+20 of 76 steps (26%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:36 2026]
+rule mni2subfids:
+    input: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 78
+    reason: Missing output files: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C013, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:37 2026]
+Finished job 18.
+21 of 76 steps (28%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:37 2026]
+rule mni2subfids:
+    input: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 138
+    reason: Missing output files: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C023, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:39 2026]
+Finished job 48.
+22 of 76 steps (29%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:39 2026]
+rule applyfidmodel:
+    input: work/sub-C008/resample/sub-C008_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C008/afids-cnn/sub-C008_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C008/sub-C008_acq-MP2RAGE_landmark.log
+    jobid: 44
+    reason: Missing output files: sub-C008/afids-cnn/sub-C008_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C008/registration/sub-C008_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C008, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:08:39 2026]
+Finished job 78.
+23 of 76 steps (30%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:40 2026]
+rule applyfidmodel:
+    input: work/sub-C013/resample/sub-C013_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C013/afids-cnn/sub-C013_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C013/sub-C013_acq-MP2RAGE_landmark.log
+    jobid: 74
+    reason: Missing output files: sub-C013/afids-cnn/sub-C013_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C013/registration/sub-C013_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C013, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:08:42 2026]
+Finished job 159.
+24 of 76 steps (32%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:43 2026]
+rule resample_im:
+    input: work/sub-C017/normalize/sub-C017_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C017/resample/sub-C017_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 99
+    reason: Missing output files: work/sub-C017/resample/sub-C017_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-C017/normalize/sub-C017_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C017, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Apr 10 09:08:43 2026]
+Finished job 138.
+25 of 76 steps (33%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:43 2026]
+rule applyfidmodel:
+    input: work/sub-C023/resample/sub-C023_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C023/afids-cnn/sub-C023_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C023/sub-C023_acq-MP2RAGE_landmark.log
+    jobid: 134
+    reason: Missing output files: sub-C023/afids-cnn/sub-C023_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C023/registration/sub-C023_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C023, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:08:46 2026]
+Finished job 141.
+26 of 76 steps (34%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:46 2026]
+rule applyfidmodel:
+    input: work/sub-C024/resample/sub-C024_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C024/registration/sub-C024_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C024/afids-cnn/sub-C024_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C024/sub-C024_acq-MP2RAGE_landmark.log
+    jobid: 140
+    reason: Missing output files: sub-C024/afids-cnn/sub-C024_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C024/resample/sub-C024_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C024, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:08:59 2026]
+Finished job 67.
+27 of 76 steps (36%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:08:59 2026]
+rule applyfidmodel:
+    input: work/sub-C028/resample/sub-C028_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C028/afids-cnn/sub-C028_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C028/sub-C028_acq-MP2RAGE_landmark.log
+    jobid: 164
+    reason: Missing output files: sub-C028/afids-cnn/sub-C028_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C028/registration/sub-C028_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, work/sub-C028/resample/sub-C028_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C028, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:09:03 2026]
+Finished job 187.
+28 of 76 steps (37%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:09:03 2026]
+rule applyfidmodel:
+    input: work/sub-C003/resample/sub-C003_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C003/afids-cnn/sub-C003_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C003/sub-C003_acq-MP2RAGE_landmark.log
+    jobid: 14
+    reason: Missing output files: sub-C003/afids-cnn/sub-C003_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C003/registration/sub-C003_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C003, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:09:10 2026]
+Finished job 99.
+29 of 76 steps (38%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:09:10 2026]
+rule regmni2sub:
+    input: work/sub-C022/n4biascorr/sub-C022_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C022/registration/sub-C022_acq-MP2RAGE_space-native_slicer.mat, work/sub-C022/registration/sub-C022_acq-MP2RAGE_space-native_xfm.txt, work/sub-C022/registration/sub-C022_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 133
+    reason: Missing output files: work/sub-C022/registration/sub-C022_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C022, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:09:45 2026]
+Finished job 133.
+30 of 76 steps (39%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:09:46 2026]
+rule regmni2sub:
+    input: work/sub-C012/n4biascorr/sub-C012_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C012/registration/sub-C012_acq-MP2RAGE_space-native_slicer.mat, work/sub-C012/registration/sub-C012_acq-MP2RAGE_space-native_xfm.txt, work/sub-C012/registration/sub-C012_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 73
+    reason: Missing output files: work/sub-C012/registration/sub-C012_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C012, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:10:21 2026]
+Finished job 23.
+31 of 76 steps (41%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:10:21 2026]
+rule norm_im:
+    input: work/sub-C004/n4biascorr/sub-C004_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C004/normalize/sub-C004_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 22
+    reason: Missing output files: work/sub-C004/normalize/sub-C004_acq-MP2RAGE_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-C004/n4biascorr/sub-C004_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=C004, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Apr 10 09:10:22 2026]
+Finished job 73.
+32 of 76 steps (42%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:10:22 2026]
+rule applyfidmodel:
+    input: work/sub-C033/resample/sub-C033_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C033/afids-cnn/sub-C033_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C033/sub-C033_acq-MP2RAGE_landmark.log
+    jobid: 194
+    reason: Missing output files: sub-C033/afids-cnn/sub-C033_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C033/registration/sub-C033_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, work/sub-C033/resample/sub-C033_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=C033, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:10:29 2026]
+Finished job 22.
+33 of 76 steps (43%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:10:29 2026]
+rule regmni2sub:
+    input: work/sub-C018/n4biascorr/sub-C018_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_slicer.mat, work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_xfm.txt, work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 109
+    reason: Missing output files: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C018, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:11:00 2026]
+Finished job 109.
+34 of 76 steps (45%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:11:00 2026]
+rule mni2subfids:
+    input: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 108
+    reason: Missing output files: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C018, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Apr 10 09:11:06 2026]
+Finished job 108.
+35 of 76 steps (46%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:11:06 2026]
+rule applyfidmodel:
+    input: work/sub-C018/resample/sub-C018_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C018/afids-cnn/sub-C018_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C018/sub-C018_acq-MP2RAGE_landmark.log
+    jobid: 104
+    reason: Missing output files: sub-C018/afids-cnn/sub-C018_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C018/registration/sub-C018_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C018, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:11:57 2026]
+Error in rule applyfidmodel:
+    jobid: 80
+    input: work/sub-C014/resample/sub-C014_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C014/registration/sub-C014_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C014/sub-C014_acq-MP2RAGE_landmark.log (check log file(s) for error details)
+    conda-env: /localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+
+RuleException:
+CalledProcessError in file /local/scratch/autoafids/autoafids/workflow/rules/cnn.smk, line 66:
+Command 'source /home/UWO/jthrowe3/miniconda3/bin/activate '/localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_'; set -euo pipefail;  python /local/scratch/autoafids/zona_segmentations_afids/.snakemake/scripts/tmpcw_gf96x.apply.py' died with <Signals.SIGKILL: 9>.
+  File "/local/scratch/autoafids/autoafids/workflow/rules/cnn.smk", line 66, in __rule_applyfidmodel
+  File "/home/UWO/jthrowe3/miniconda3/envs/autoafids-env/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+[Fri Apr 10 09:12:11 2026]
+Finished job 146.
+36 of 76 steps (47%) done
+[Fri Apr 10 09:12:34 2026]
+Finished job 56.
+37 of 76 steps (49%) done
+[Fri Apr 10 09:12:36 2026]
+Finished job 74.
+38 of 76 steps (50%) done
+[Fri Apr 10 09:12:40 2026]
+Finished job 44.
+39 of 76 steps (51%) done
+[Fri Apr 10 09:12:42 2026]
+Finished job 164.
+40 of 76 steps (53%) done
+[Fri Apr 10 09:12:53 2026]
+Finished job 140.
+41 of 76 steps (54%) done
+[Fri Apr 10 09:12:54 2026]
+Finished job 14.
+42 of 76 steps (55%) done
+[Fri Apr 10 09:12:58 2026]
+Finished job 134.
+43 of 76 steps (57%) done
+[Fri Apr 10 09:12:58 2026]
+Finished job 110.
+44 of 76 steps (58%) done
+[Fri Apr 10 09:13:51 2026]
+Finished job 104.
+45 of 76 steps (59%) done
+[Fri Apr 10 09:14:04 2026]
+Finished job 194.
+46 of 76 steps (61%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2026-04-10T090735.805916.snakemake.log

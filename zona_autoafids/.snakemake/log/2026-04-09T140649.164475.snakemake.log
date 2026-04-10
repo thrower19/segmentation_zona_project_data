@@ -1,0 +1,5 @@
+Config file config/snakebids.yml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Nothing to be done (all requested files are present and up to date).
+Complete log: .snakemake/log/2026-04-09T140649.164475.snakemake.log

@@ -1,0 +1,5 @@
+Config file config/snakebids.yml is extended by additional config specified via the command line.
+KeyError in file /local/scratch/autoafids/autoafids/workflow/Snakefile, line 154:
+'T1w'
+  File "/local/scratch/autoafids/autoafids/workflow/Snakefile", line 154, in <module>
+  File "/home/UWO/jthrowe3/miniconda3/envs/autoafids-env/lib/python3.10/site-packages/snakebids/core/datasets.py", line 627, in __getitem__

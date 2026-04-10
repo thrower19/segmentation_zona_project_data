@@ -1,0 +1,43 @@
+Config file config/snakebids.yml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+applyfidmodel        1
+total                2
+
+Select jobs to execute...
+
+[Fri Apr 10 09:42:13 2026]
+rule applyfidmodel:
+    input: work/sub-C014/resample/sub-C014_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C014/registration/sub-C014_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C014/sub-C014_acq-MP2RAGE_landmark.log
+    jobid: 80
+    reason: Missing output files: sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    wildcards: subject=C014, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Fri Apr 10 09:44:10 2026]
+Finished job 80.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Apr 10 09:44:10 2026]
+localrule all:
+    input: sub-C001/afids-cnn/sub-C001_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C002/afids-cnn/sub-C002_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C003/afids-cnn/sub-C003_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C004/afids-cnn/sub-C004_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C005/afids-cnn/sub-C005_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C006/afids-cnn/sub-C006_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C007/afids-cnn/sub-C007_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C008/afids-cnn/sub-C008_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C009/afids-cnn/sub-C009_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C010/afids-cnn/sub-C010_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C011/afids-cnn/sub-C011_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C012/afids-cnn/sub-C012_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C013/afids-cnn/sub-C013_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C015/afids-cnn/sub-C015_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C016/afids-cnn/sub-C016_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C017/afids-cnn/sub-C017_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C018/afids-cnn/sub-C018_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C019/afids-cnn/sub-C019_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C020/afids-cnn/sub-C020_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C021/afids-cnn/sub-C021_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C022/afids-cnn/sub-C022_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C023/afids-cnn/sub-C023_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C024/afids-cnn/sub-C024_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C025/afids-cnn/sub-C025_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C026/afids-cnn/sub-C026_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C027/afids-cnn/sub-C027_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C028/afids-cnn/sub-C028_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C029/afids-cnn/sub-C029_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C030/afids-cnn/sub-C030_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C031/afids-cnn/sub-C031_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C032/afids-cnn/sub-C032_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C033/afids-cnn/sub-C033_acq-MP2RAGE_desc-afidscnn_afids.fcsv, sub-C034/afids-cnn/sub-C034_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    jobid: 0
+    reason: Input files updated by another job: sub-C014/afids-cnn/sub-C014_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    resources: tmpdir=/localscratch/tmp
+
+[Fri Apr 10 09:44:10 2026]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2026-04-10T094204.614853.snakemake.log

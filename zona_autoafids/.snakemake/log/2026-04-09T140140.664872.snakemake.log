@@ -1,0 +1,126 @@
+Config file config/snakebids.yml is extended by additional config specified via the command line.
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 12
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+applyfidmodel             1
+mni2subfids               1
+n4_bias_correction        1
+norm_im                   1
+regmni2sub                1
+resample_im               1
+total                     7
+
+Select jobs to execute...
+
+[Thu Apr  9 14:01:47 2026]
+rule n4_bias_correction:
+    input: /local/scratch/t1w_images/sub-C001/anat/sub-C001_acq-MP2RAGE_T1w.nii.gz
+    output: work/sub-C001/n4biascorr/sub-C001_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    jobid: 4
+    reason: Missing output files: work/sub-C001/n4biascorr/sub-C001_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=C001, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Thu Apr  9 14:02:27 2026]
+Finished job 4.
+1 of 7 steps (14%) done
+Select jobs to execute...
+
+[Thu Apr  9 14:02:27 2026]
+rule norm_im:
+    input: work/sub-C001/n4biascorr/sub-C001_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C001/normalize/sub-C001_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    jobid: 3
+    reason: Missing output files: work/sub-C001/normalize/sub-C001_acq-MP2RAGE_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-C001/n4biascorr/sub-C001_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=C001, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+[Thu Apr  9 14:02:27 2026]
+rule regmni2sub:
+    input: work/sub-C001/n4biascorr/sub-C001_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    output: work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_slicer.mat, work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_xfm.txt, work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_MNI.nii.gz
+    jobid: 6
+    reason: Missing output files: work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_xfm.txt; Input files updated by another job: work/sub-C001/n4biascorr/sub-C001_acq-MP2RAGE_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=C001, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Thu Apr  9 14:02:32 2026]
+Finished job 3.
+2 of 7 steps (29%) done
+Select jobs to execute...
+
+[Thu Apr  9 14:02:32 2026]
+rule resample_im:
+    input: work/sub-C001/normalize/sub-C001_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    output: work/sub-C001/resample/sub-C001_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz
+    jobid: 2
+    reason: Missing output files: work/sub-C001/resample/sub-C001_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-C001/normalize/sub-C001_acq-MP2RAGE_desc-zscore_T1w.nii.gz
+    wildcards: subject=C001, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Thu Apr  9 14:02:42 2026]
+Finished job 6.
+3 of 7 steps (43%) done
+Select jobs to execute...
+
+[Thu Apr  9 14:02:42 2026]
+rule mni2subfids:
+    input: work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_xfm.txt
+    output: work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    jobid: 5
+    reason: Missing output files: work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv; Input files updated by another job: work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_xfm.txt
+    wildcards: subject=C001, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Thu Apr  9 14:02:42 2026]
+Finished job 2.
+4 of 7 steps (57%) done
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Thu Apr  9 14:02:45 2026]
+Finished job 5.
+5 of 7 steps (71%) done
+Select jobs to execute...
+
+[Thu Apr  9 14:02:45 2026]
+rule applyfidmodel:
+    input: work/sub-C001/resample/sub-C001_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv, /localscratch/.cache/autoafids/models
+    output: sub-C001/afids-cnn/sub-C001_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    log: logs/sub-C001/sub-C001_acq-MP2RAGE_landmark.log
+    jobid: 1
+    reason: Missing output files: sub-C001/afids-cnn/sub-C001_acq-MP2RAGE_desc-afidscnn_afids.fcsv; Input files updated by another job: work/sub-C001/resample/sub-C001_acq-MP2RAGE_res-100_desc-zscore_T1w.nii.gz, work/sub-C001/registration/sub-C001_acq-MP2RAGE_space-native_desc-MNI_afids.fcsv
+    wildcards: subject=C001, acq=MP2RAGE
+    resources: tmpdir=/localscratch/tmp
+
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/92502f2a1e59cb5fb62601964dafd8b2_
+[Thu Apr  9 14:04:29 2026]
+Finished job 1.
+6 of 7 steps (86%) done
+Select jobs to execute...
+
+[Thu Apr  9 14:04:29 2026]
+localrule all:
+    input: sub-C001/afids-cnn/sub-C001_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    jobid: 0
+    reason: Input files updated by another job: sub-C001/afids-cnn/sub-C001_acq-MP2RAGE_desc-afidscnn_afids.fcsv
+    resources: tmpdir=/localscratch/tmp
+
+[Thu Apr  9 14:04:29 2026]
+Finished job 0.
+7 of 7 steps (100%) done
+Complete log: .snakemake/log/2026-04-09T140140.664872.snakemake.log
