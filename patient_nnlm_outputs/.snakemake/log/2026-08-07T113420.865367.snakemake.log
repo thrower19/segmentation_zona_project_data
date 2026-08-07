@@ -1,0 +1,2287 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: UWO-CBS-Heavy11
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+n4_bias_correction       25
+nnlm_to_fcsv             25
+norm_im                  25
+resample_im              25
+run_nnlm                 25
+stereotaxy               25
+total                   151
+
+Select jobs to execute...
+Execute 2 jobs...
+[Fri Aug  7 11:34:23 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P352/ses-preop/anat/sub-P352_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P352/ses-preop/n4biascorr/sub-P352_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 101
+    reason: Missing output files: work/sub-P352/ses-preop/n4biascorr/sub-P352_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P352, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 11:34:23 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P175/ses-preop/anat/sub-P175_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P175/ses-preop/n4biascorr/sub-P175_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 16
+    reason: Missing output files: work/sub-P175/ses-preop/n4biascorr/sub-P175_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P175, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+[Fri Aug  7 11:34:57 2026]
+Finished jobid: 16 (Rule: n4_bias_correction)
+1 of 151 steps (1%) done
+Execute 1 jobs...
+[Fri Aug  7 11:34:57 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P202/ses-preop/anat/sub-P202_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P202/ses-preop/n4biascorr/sub-P202_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 31
+    reason: Missing output files: work/sub-P202/ses-preop/n4biascorr/sub-P202_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P202, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:35:10 2026]
+Finished jobid: 101 (Rule: n4_bias_correction)
+2 of 151 steps (1%) done
+Execute 1 jobs...
+[Fri Aug  7 11:35:10 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P292/ses-preop/anat/sub-P292_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P292/ses-preop/n4biascorr/sub-P292_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 76
+    reason: Missing output files: work/sub-P292/ses-preop/n4biascorr/sub-P292_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P292, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+[Fri Aug  7 11:35:30 2026]
+Finished jobid: 31 (Rule: n4_bias_correction)
+3 of 151 steps (2%) done
+Execute 1 jobs...
+[Fri Aug  7 11:35:30 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P214/ses-preop/anat/sub-P214_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P214/ses-preop/n4biascorr/sub-P214_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 46
+    reason: Missing output files: work/sub-P214/ses-preop/n4biascorr/sub-P214_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P214, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:36:06 2026]
+Finished jobid: 46 (Rule: n4_bias_correction)
+4 of 151 steps (3%) done
+Execute 1 jobs...
+[Fri Aug  7 11:36:07 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P355/ses-preop/anat/sub-P355_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P355/ses-preop/n4biascorr/sub-P355_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 111
+    reason: Missing output files: work/sub-P355/ses-preop/n4biascorr/sub-P355_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P355, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:38:15 2026]
+Finished jobid: 76 (Rule: n4_bias_correction)
+5 of 151 steps (3%) done
+Execute 1 jobs...
+[Fri Aug  7 11:38:15 2026]
+localrule norm_im:
+    input: work/sub-P175/ses-preop/n4biascorr/sub-P175_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P175/ses-preop/normalize/sub-P175_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 15
+    reason: Missing output files: work/sub-P175/ses-preop/normalize/sub-P175_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P175/ses-preop/n4biascorr/sub-P175_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P175, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:38:19 2026]
+Finished jobid: 15 (Rule: norm_im)
+6 of 151 steps (4%) done
+Execute 1 jobs...
+[Fri Aug  7 11:38:19 2026]
+localrule resample_im:
+    input: work/sub-P175/ses-preop/normalize/sub-P175_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P175/ses-preop/resample/sub-P175_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 14
+    reason: Missing output files: work/sub-P175/ses-preop/resample/sub-P175_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P175/ses-preop/normalize/sub-P175_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P175, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:38:28 2026]
+Finished jobid: 111 (Rule: n4_bias_correction)
+7 of 151 steps (5%) done
+Execute 1 jobs...
+[Fri Aug  7 11:38:28 2026]
+localrule norm_im:
+    input: work/sub-P355/ses-preop/n4biascorr/sub-P355_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P355/ses-preop/normalize/sub-P355_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 110
+    reason: Missing output files: work/sub-P355/ses-preop/normalize/sub-P355_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P355/ses-preop/n4biascorr/sub-P355_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P355, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:38:30 2026]
+Finished jobid: 14 (Rule: resample_im)
+8 of 151 steps (5%) done
+Execute 1 jobs...
+[Fri Aug  7 11:38:30 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P310/ses-preop/anat/sub-P310_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P310/ses-preop/n4biascorr/sub-P310_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 86
+    reason: Missing output files: work/sub-P310/ses-preop/n4biascorr/sub-P310_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P310, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:38:42 2026]
+Finished jobid: 110 (Rule: norm_im)
+9 of 151 steps (6%) done
+Execute 1 jobs...
+[Fri Aug  7 11:38:42 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P256/ses-preop/anat/sub-P256_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P256/ses-preop/n4biascorr/sub-P256_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 56
+    reason: Missing output files: work/sub-P256/ses-preop/n4biascorr/sub-P256_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P256, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:39:23 2026]
+Finished jobid: 56 (Rule: n4_bias_correction)
+10 of 151 steps (7%) done
+Execute 1 jobs...
+[Fri Aug  7 11:39:23 2026]
+localrule norm_im:
+    input: work/sub-P256/ses-preop/n4biascorr/sub-P256_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P256/ses-preop/normalize/sub-P256_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 55
+    reason: Missing output files: work/sub-P256/ses-preop/normalize/sub-P256_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P256/ses-preop/n4biascorr/sub-P256_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P256, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:39:27 2026]
+Finished jobid: 55 (Rule: norm_im)
+11 of 151 steps (7%) done
+Execute 1 jobs...
+[Fri Aug  7 11:39:27 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P367/ses-preop/anat/sub-P367_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P367/ses-preop/n4biascorr/sub-P367_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 121
+    reason: Missing output files: work/sub-P367/ses-preop/n4biascorr/sub-P367_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P367, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:40:07 2026]
+Finished jobid: 121 (Rule: n4_bias_correction)
+12 of 151 steps (8%) done
+Execute 1 jobs...
+[Fri Aug  7 11:40:07 2026]
+localrule norm_im:
+    input: work/sub-P367/ses-preop/n4biascorr/sub-P367_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P367/ses-preop/normalize/sub-P367_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 120
+    reason: Missing output files: work/sub-P367/ses-preop/normalize/sub-P367_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P367/ses-preop/n4biascorr/sub-P367_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P367, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:40:11 2026]
+Finished jobid: 120 (Rule: norm_im)
+13 of 151 steps (9%) done
+Execute 1 jobs...
+[Fri Aug  7 11:40:11 2026]
+localrule norm_im:
+    input: work/sub-P214/ses-preop/n4biascorr/sub-P214_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P214/ses-preop/normalize/sub-P214_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 45
+    reason: Missing output files: work/sub-P214/ses-preop/normalize/sub-P214_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P214/ses-preop/n4biascorr/sub-P214_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P214, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:40:15 2026]
+Finished jobid: 45 (Rule: norm_im)
+14 of 151 steps (9%) done
+Execute 1 jobs...
+[Fri Aug  7 11:40:15 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P167/ses-preop/anat/sub-P167_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P167/ses-preop/n4biascorr/sub-P167_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 11
+    reason: Missing output files: work/sub-P167/ses-preop/n4biascorr/sub-P167_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P167, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:40:49 2026]
+Finished jobid: 11 (Rule: n4_bias_correction)
+15 of 151 steps (10%) done
+Execute 1 jobs...
+[Fri Aug  7 11:40:49 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P277/ses-preop/anat/sub-P277_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P277/ses-preop/n4biascorr/sub-P277_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 61
+    reason: Missing output files: work/sub-P277/ses-preop/n4biascorr/sub-P277_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P277, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:40:51 2026]
+Finished jobid: 86 (Rule: n4_bias_correction)
+16 of 151 steps (11%) done
+Execute 1 jobs...
+[Fri Aug  7 11:40:51 2026]
+localrule norm_im:
+    input: work/sub-P310/ses-preop/n4biascorr/sub-P310_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P310/ses-preop/normalize/sub-P310_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 85
+    reason: Missing output files: work/sub-P310/ses-preop/normalize/sub-P310_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P310/ses-preop/n4biascorr/sub-P310_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P310, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:41:06 2026]
+Finished jobid: 85 (Rule: norm_im)
+17 of 151 steps (11%) done
+Execute 1 jobs...
+[Fri Aug  7 11:41:06 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P374/ses-preop/anat/sub-P374_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P374/ses-preop/n4biascorr/sub-P374_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 131
+    reason: Missing output files: work/sub-P374/ses-preop/n4biascorr/sub-P374_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P374, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:43:08 2026]
+Finished jobid: 61 (Rule: n4_bias_correction)
+18 of 151 steps (12%) done
+Execute 1 jobs...
+[Fri Aug  7 11:43:08 2026]
+localrule norm_im:
+    input: work/sub-P277/ses-preop/n4biascorr/sub-P277_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P277/ses-preop/normalize/sub-P277_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 60
+    reason: Missing output files: work/sub-P277/ses-preop/normalize/sub-P277_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P277/ses-preop/n4biascorr/sub-P277_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P277, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:43:21 2026]
+Finished jobid: 60 (Rule: norm_im)
+19 of 151 steps (13%) done
+Execute 1 jobs...
+[Fri Aug  7 11:43:21 2026]
+localrule resample_im:
+    input: work/sub-P277/ses-preop/normalize/sub-P277_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P277/ses-preop/resample/sub-P277_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 59
+    reason: Missing output files: work/sub-P277/ses-preop/resample/sub-P277_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P277/ses-preop/normalize/sub-P277_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P277, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:43:25 2026]
+Finished jobid: 131 (Rule: n4_bias_correction)
+20 of 151 steps (13%) done
+Execute 1 jobs...
+[Fri Aug  7 11:43:25 2026]
+localrule norm_im:
+    input: work/sub-P374/ses-preop/n4biascorr/sub-P374_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P374/ses-preop/normalize/sub-P374_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 130
+    reason: Missing output files: work/sub-P374/ses-preop/normalize/sub-P374_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P374/ses-preop/n4biascorr/sub-P374_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P374, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:43:38 2026]
+Finished jobid: 130 (Rule: norm_im)
+21 of 151 steps (14%) done
+Execute 1 jobs...
+[Fri Aug  7 11:43:38 2026]
+localrule resample_im:
+    input: work/sub-P374/ses-preop/normalize/sub-P374_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P374/ses-preop/resample/sub-P374_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 129
+    reason: Missing output files: work/sub-P374/ses-preop/resample/sub-P374_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P374/ses-preop/normalize/sub-P374_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P374, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:43:39 2026]
+Finished jobid: 59 (Rule: resample_im)
+22 of 151 steps (15%) done
+Execute 1 jobs...
+[Fri Aug  7 11:43:39 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P182/ses-preop/anat/sub-P182_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P182/ses-preop/n4biascorr/sub-P182_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 21
+    reason: Missing output files: work/sub-P182/ses-preop/n4biascorr/sub-P182_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P182, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:43:56 2026]
+Finished jobid: 129 (Rule: resample_im)
+23 of 151 steps (15%) done
+Execute 1 jobs...
+[Fri Aug  7 11:43:56 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P205/ses-preop/anat/sub-P205_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P205/ses-preop/n4biascorr/sub-P205_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 36
+    reason: Missing output files: work/sub-P205/ses-preop/n4biascorr/sub-P205_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P205, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:44:05 2026]
+Finished jobid: 21 (Rule: n4_bias_correction)
+24 of 151 steps (16%) done
+Execute 1 jobs...
+[Fri Aug  7 11:44:05 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P359/ses-preop/anat/sub-P359_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P359/ses-preop/n4biascorr/sub-P359_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 116
+    reason: Missing output files: work/sub-P359/ses-preop/n4biascorr/sub-P359_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P359, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:44:29 2026]
+Finished jobid: 36 (Rule: n4_bias_correction)
+25 of 151 steps (17%) done
+Execute 1 jobs...
+[Fri Aug  7 11:44:29 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P328/ses-preop/anat/sub-P328_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P328/ses-preop/n4biascorr/sub-P328_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 91
+    reason: Missing output files: work/sub-P328/ses-preop/n4biascorr/sub-P328_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P328, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:45:06 2026]
+Finished jobid: 91 (Rule: n4_bias_correction)
+26 of 151 steps (17%) done
+Execute 1 jobs...
+[Fri Aug  7 11:45:06 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P221/ses-preop/anat/sub-P221_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P221/ses-preop/n4biascorr/sub-P221_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 51
+    reason: Missing output files: work/sub-P221/ses-preop/n4biascorr/sub-P221_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P221, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:45:47 2026]
+Finished jobid: 51 (Rule: n4_bias_correction)
+27 of 151 steps (18%) done
+Execute 1 jobs...
+[Fri Aug  7 11:45:47 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P293/ses-preop/anat/sub-P293_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P293/ses-preop/n4biascorr/sub-P293_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 81
+    reason: Missing output files: work/sub-P293/ses-preop/n4biascorr/sub-P293_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P293, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:46:23 2026]
+Finished jobid: 116 (Rule: n4_bias_correction)
+28 of 151 steps (19%) done
+Execute 1 jobs...
+[Fri Aug  7 11:46:23 2026]
+localrule norm_im:
+    input: work/sub-P328/ses-preop/n4biascorr/sub-P328_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P328/ses-preop/normalize/sub-P328_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 90
+    reason: Missing output files: work/sub-P328/ses-preop/normalize/sub-P328_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P328/ses-preop/n4biascorr/sub-P328_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P328, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:46:27 2026]
+Finished jobid: 90 (Rule: norm_im)
+29 of 151 steps (19%) done
+Execute 1 jobs...
+[Fri Aug  7 11:46:27 2026]
+localrule norm_im:
+    input: work/sub-P182/ses-preop/n4biascorr/sub-P182_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P182/ses-preop/normalize/sub-P182_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 20
+    reason: Missing output files: work/sub-P182/ses-preop/normalize/sub-P182_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P182/ses-preop/n4biascorr/sub-P182_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P182, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:46:30 2026]
+Finished jobid: 20 (Rule: norm_im)
+30 of 151 steps (20%) done
+Execute 1 jobs...
+[Fri Aug  7 11:46:30 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P353/ses-preop/anat/sub-P353_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P353/ses-preop/n4biascorr/sub-P353_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 106
+    reason: Missing output files: work/sub-P353/ses-preop/n4biascorr/sub-P353_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P353, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:48:07 2026]
+Finished jobid: 106 (Rule: n4_bias_correction)
+31 of 151 steps (21%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:07 2026]
+localrule norm_im:
+    input: work/sub-P359/ses-preop/n4biascorr/sub-P359_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P359/ses-preop/normalize/sub-P359_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 115
+    reason: Missing output files: work/sub-P359/ses-preop/normalize/sub-P359_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P359/ses-preop/n4biascorr/sub-P359_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P359, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:48:07 2026]
+Finished jobid: 81 (Rule: n4_bias_correction)
+32 of 151 steps (21%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:08 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P213/ses-preop/anat/sub-P213_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P213/ses-preop/n4biascorr/sub-P213_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 41
+    reason: Missing output files: work/sub-P213/ses-preop/n4biascorr/sub-P213_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P213, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:48:21 2026]
+Finished jobid: 115 (Rule: norm_im)
+33 of 151 steps (22%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:21 2026]
+localrule norm_im:
+    input: work/sub-P221/ses-preop/n4biascorr/sub-P221_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P221/ses-preop/normalize/sub-P221_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 50
+    reason: Missing output files: work/sub-P221/ses-preop/normalize/sub-P221_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P221/ses-preop/n4biascorr/sub-P221_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P221, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:48:25 2026]
+Finished jobid: 50 (Rule: norm_im)
+34 of 151 steps (23%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:25 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P289/ses-preop/anat/sub-P289_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P289/ses-preop/n4biascorr/sub-P289_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 71
+    reason: Missing output files: work/sub-P289/ses-preop/n4biascorr/sub-P289_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P289, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:48:35 2026]
+Finished jobid: 41 (Rule: n4_bias_correction)
+35 of 151 steps (23%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:35 2026]
+localrule norm_im:
+    input: work/sub-P293/ses-preop/n4biascorr/sub-P293_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P293/ses-preop/normalize/sub-P293_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 80
+    reason: Missing output files: work/sub-P293/ses-preop/normalize/sub-P293_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P293/ses-preop/n4biascorr/sub-P293_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P293, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:48:48 2026]
+Finished jobid: 80 (Rule: norm_im)
+36 of 151 steps (24%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:48 2026]
+localrule resample_im:
+    input: work/sub-P293/ses-preop/normalize/sub-P293_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P293/ses-preop/resample/sub-P293_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 79
+    reason: Missing output files: work/sub-P293/ses-preop/resample/sub-P293_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P293/ses-preop/normalize/sub-P293_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P293, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:48:51 2026]
+Finished jobid: 71 (Rule: n4_bias_correction)
+37 of 151 steps (25%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:51 2026]
+localrule norm_im:
+    input: work/sub-P289/ses-preop/n4biascorr/sub-P289_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P289/ses-preop/normalize/sub-P289_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 70
+    reason: Missing output files: work/sub-P289/ses-preop/normalize/sub-P289_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P289/ses-preop/n4biascorr/sub-P289_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P289, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:48:55 2026]
+Finished jobid: 70 (Rule: norm_im)
+38 of 151 steps (25%) done
+Execute 1 jobs...
+[Fri Aug  7 11:48:55 2026]
+localrule resample_im:
+    input: work/sub-P289/ses-preop/normalize/sub-P289_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P289/ses-preop/resample/sub-P289_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 69
+    reason: Missing output files: work/sub-P289/ses-preop/resample/sub-P289_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P289/ses-preop/normalize/sub-P289_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P289, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:49:06 2026]
+Finished jobid: 79 (Rule: resample_im)
+39 of 151 steps (26%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:06 2026]
+localrule norm_im:
+    input: work/sub-P167/ses-preop/n4biascorr/sub-P167_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P167/ses-preop/normalize/sub-P167_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 10
+    reason: Missing output files: work/sub-P167/ses-preop/normalize/sub-P167_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P167/ses-preop/n4biascorr/sub-P167_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P167, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+[Fri Aug  7 11:49:06 2026]
+Finished jobid: 69 (Rule: resample_im)
+40 of 151 steps (26%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:06 2026]
+localrule resample_im:
+    input: work/sub-P182/ses-preop/normalize/sub-P182_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P182/ses-preop/resample/sub-P182_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 19
+    reason: Missing output files: work/sub-P182/ses-preop/resample/sub-P182_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P182/ses-preop/normalize/sub-P182_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P182, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:49:09 2026]
+Finished jobid: 10 (Rule: norm_im)
+41 of 151 steps (27%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:09 2026]
+localrule resample_im:
+    input: work/sub-P328/ses-preop/normalize/sub-P328_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P328/ses-preop/resample/sub-P328_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 89
+    reason: Missing output files: work/sub-P328/ses-preop/resample/sub-P328_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P328/ses-preop/normalize/sub-P328_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P328, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:49:17 2026]
+Finished jobid: 19 (Rule: resample_im)
+42 of 151 steps (28%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:17 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P193/ses-preop/anat/sub-P193_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P193/ses-preop/n4biascorr/sub-P193_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 26
+    reason: Missing output files: work/sub-P193/ses-preop/n4biascorr/sub-P193_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P193, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:49:20 2026]
+Finished jobid: 89 (Rule: resample_im)
+43 of 151 steps (28%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:20 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P350/ses-preop/anat/sub-P350_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P350/ses-preop/n4biascorr/sub-P350_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 96
+    reason: Missing output files: work/sub-P350/ses-preop/n4biascorr/sub-P350_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P350, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:49:49 2026]
+Finished jobid: 26 (Rule: n4_bias_correction)
+44 of 151 steps (29%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:49 2026]
+localrule norm_im:
+    input: work/sub-P353/ses-preop/n4biascorr/sub-P353_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P353/ses-preop/normalize/sub-P353_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 105
+    reason: Missing output files: work/sub-P353/ses-preop/normalize/sub-P353_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P353/ses-preop/n4biascorr/sub-P353_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P353, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:49:58 2026]
+Finished jobid: 105 (Rule: norm_im)
+45 of 151 steps (30%) done
+Execute 1 jobs...
+[Fri Aug  7 11:49:58 2026]
+localrule resample_im:
+    input: work/sub-P359/ses-preop/normalize/sub-P359_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P359/ses-preop/resample/sub-P359_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 114
+    reason: Missing output files: work/sub-P359/ses-preop/resample/sub-P359_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P359/ses-preop/normalize/sub-P359_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P359, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:02 2026]
+Finished jobid: 96 (Rule: n4_bias_correction)
+46 of 151 steps (30%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:02 2026]
+localrule norm_im:
+    input: work/sub-P213/ses-preop/n4biascorr/sub-P213_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P213/ses-preop/normalize/sub-P213_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 40
+    reason: Missing output files: work/sub-P213/ses-preop/normalize/sub-P213_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P213/ses-preop/n4biascorr/sub-P213_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P213, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:50:06 2026]
+Finished jobid: 40 (Rule: norm_im)
+47 of 151 steps (31%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:06 2026]
+localrule resample_im:
+    input: work/sub-P221/ses-preop/normalize/sub-P221_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P221/ses-preop/resample/sub-P221_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 49
+    reason: Missing output files: work/sub-P221/ses-preop/resample/sub-P221_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P221/ses-preop/normalize/sub-P221_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P221, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:16 2026]
+Finished jobid: 114 (Rule: resample_im)
+48 of 151 steps (32%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:16 2026]
+localrule norm_im:
+    input: work/sub-P350/ses-preop/n4biascorr/sub-P350_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P350/ses-preop/normalize/sub-P350_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 95
+    reason: Missing output files: work/sub-P350/ses-preop/normalize/sub-P350_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P350/ses-preop/n4biascorr/sub-P350_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P350, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:50:18 2026]
+Finished jobid: 49 (Rule: resample_im)
+49 of 151 steps (32%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:18 2026]
+localrule norm_im:
+    input: work/sub-P193/ses-preop/n4biascorr/sub-P193_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P193/ses-preop/normalize/sub-P193_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 25
+    reason: Missing output files: work/sub-P193/ses-preop/normalize/sub-P193_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P193/ses-preop/n4biascorr/sub-P193_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P193, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:50:21 2026]
+Finished jobid: 95 (Rule: norm_im)
+50 of 151 steps (33%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:21 2026]
+localrule resample_im:
+    input: work/sub-P353/ses-preop/normalize/sub-P353_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P353/ses-preop/resample/sub-P353_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 104
+    reason: Missing output files: work/sub-P353/ses-preop/resample/sub-P353_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P353/ses-preop/normalize/sub-P353_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P353, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:21 2026]
+Finished jobid: 25 (Rule: norm_im)
+51 of 151 steps (34%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:21 2026]
+localrule resample_im:
+    input: work/sub-P193/ses-preop/normalize/sub-P193_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P193/ses-preop/resample/sub-P193_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 24
+    reason: Missing output files: work/sub-P193/ses-preop/resample/sub-P193_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P193/ses-preop/normalize/sub-P193_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P193, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:32 2026]
+Finished jobid: 24 (Rule: resample_im)
+52 of 151 steps (34%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:32 2026]
+localrule resample_im:
+    input: work/sub-P256/ses-preop/normalize/sub-P256_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P256/ses-preop/resample/sub-P256_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 54
+    reason: Missing output files: work/sub-P256/ses-preop/resample/sub-P256_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P256/ses-preop/normalize/sub-P256_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P256, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:33 2026]
+Finished jobid: 104 (Rule: resample_im)
+53 of 151 steps (35%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:33 2026]
+localrule resample_im:
+    input: work/sub-P213/ses-preop/normalize/sub-P213_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P213/ses-preop/resample/sub-P213_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 39
+    reason: Missing output files: work/sub-P213/ses-preop/resample/sub-P213_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P213/ses-preop/normalize/sub-P213_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P213, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:44 2026]
+Finished jobid: 54 (Rule: resample_im)
+54 of 151 steps (36%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:44 2026]
+localrule resample_im:
+    input: work/sub-P167/ses-preop/normalize/sub-P167_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P167/ses-preop/resample/sub-P167_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 9
+    reason: Missing output files: work/sub-P167/ses-preop/resample/sub-P167_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P167/ses-preop/normalize/sub-P167_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P167, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:50:44 2026]
+Finished jobid: 39 (Rule: resample_im)
+55 of 151 steps (36%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:44 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P369/ses-preop/anat/sub-P369_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P369/ses-preop/n4biascorr/sub-P369_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 126
+    reason: Missing output files: work/sub-P369/ses-preop/n4biascorr/sub-P369_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P369, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:50:56 2026]
+Finished jobid: 9 (Rule: resample_im)
+56 of 151 steps (37%) done
+Execute 1 jobs...
+[Fri Aug  7 11:50:56 2026]
+localrule resample_im:
+    input: work/sub-P214/ses-preop/normalize/sub-P214_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P214/ses-preop/resample/sub-P214_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 44
+    reason: Missing output files: work/sub-P214/ses-preop/resample/sub-P214_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P214/ses-preop/normalize/sub-P214_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P214, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:51:07 2026]
+Finished jobid: 44 (Rule: resample_im)
+57 of 151 steps (38%) done
+Execute 1 jobs...
+[Fri Aug  7 11:51:07 2026]
+localrule resample_im:
+    input: work/sub-P367/ses-preop/normalize/sub-P367_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P367/ses-preop/resample/sub-P367_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 119
+    reason: Missing output files: work/sub-P367/ses-preop/resample/sub-P367_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P367/ses-preop/normalize/sub-P367_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P367, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:51:13 2026]
+Finished jobid: 126 (Rule: n4_bias_correction)
+58 of 151 steps (38%) done
+Execute 1 jobs...
+[Fri Aug  7 11:51:13 2026]
+localrule n4_bias_correction:
+    input: /local/scratch/rawdata/sub-P281/ses-preop/anat/sub-P281_ses-preop_acq-ax_run-01_T1w.nii.gz
+    output: work/sub-P281/ses-preop/n4biascorr/sub-P281_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    jobid: 66
+    reason: Missing output files: work/sub-P281/ses-preop/n4biascorr/sub-P281_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P281, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/e8ff564ca4e208014aa4e977742ac559_
+[Fri Aug  7 11:51:18 2026]
+Finished jobid: 119 (Rule: resample_im)
+59 of 151 steps (39%) done
+Execute 1 jobs...
+[Fri Aug  7 11:51:18 2026]
+localrule norm_im:
+    input: work/sub-P292/ses-preop/n4biascorr/sub-P292_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P292/ses-preop/normalize/sub-P292_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 75
+    reason: Missing output files: work/sub-P292/ses-preop/normalize/sub-P292_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P292/ses-preop/n4biascorr/sub-P292_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P292, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:51:36 2026]
+Finished jobid: 75 (Rule: norm_im)
+60 of 151 steps (40%) done
+Execute 1 jobs...
+[Fri Aug  7 11:51:36 2026]
+localrule resample_im:
+    input: work/sub-P310/ses-preop/normalize/sub-P310_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P310/ses-preop/resample/sub-P310_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 84
+    reason: Missing output files: work/sub-P310/ses-preop/resample/sub-P310_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P310/ses-preop/normalize/sub-P310_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P310, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:51:56 2026]
+Finished jobid: 84 (Rule: resample_im)
+61 of 151 steps (40%) done
+Execute 1 jobs...
+[Fri Aug  7 11:51:56 2026]
+localrule norm_im:
+    input: work/sub-P202/ses-preop/n4biascorr/sub-P202_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P202/ses-preop/normalize/sub-P202_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 30
+    reason: Missing output files: work/sub-P202/ses-preop/normalize/sub-P202_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P202/ses-preop/n4biascorr/sub-P202_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P202, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:52:00 2026]
+Finished jobid: 30 (Rule: norm_im)
+62 of 151 steps (41%) done
+Execute 1 jobs...
+[Fri Aug  7 11:52:00 2026]
+localrule norm_im:
+    input: work/sub-P352/ses-preop/n4biascorr/sub-P352_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P352/ses-preop/normalize/sub-P352_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 100
+    reason: Missing output files: work/sub-P352/ses-preop/normalize/sub-P352_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P352/ses-preop/n4biascorr/sub-P352_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P352, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:52:05 2026]
+Finished jobid: 100 (Rule: norm_im)
+63 of 151 steps (42%) done
+Execute 1 jobs...
+[Fri Aug  7 11:52:05 2026]
+localrule norm_im:
+    input: work/sub-P205/ses-preop/n4biascorr/sub-P205_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P205/ses-preop/normalize/sub-P205_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 35
+    reason: Missing output files: work/sub-P205/ses-preop/normalize/sub-P205_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P205/ses-preop/n4biascorr/sub-P205_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P205, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:52:09 2026]
+Finished jobid: 35 (Rule: norm_im)
+64 of 151 steps (42%) done
+Execute 1 jobs...
+[Fri Aug  7 11:52:09 2026]
+localrule resample_im:
+    input: work/sub-P355/ses-preop/normalize/sub-P355_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P355/ses-preop/resample/sub-P355_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 109
+    reason: Missing output files: work/sub-P355/ses-preop/resample/sub-P355_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P355/ses-preop/normalize/sub-P355_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P355, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:52:26 2026]
+Finished jobid: 109 (Rule: resample_im)
+65 of 151 steps (43%) done
+Execute 1 jobs...
+[Fri Aug  7 11:52:26 2026]
+localrule resample_im:
+    input: work/sub-P292/ses-preop/normalize/sub-P292_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P292/ses-preop/resample/sub-P292_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 74
+    reason: Missing output files: work/sub-P292/ses-preop/resample/sub-P292_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P292/ses-preop/normalize/sub-P292_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P292, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:52:50 2026]
+Finished jobid: 74 (Rule: resample_im)
+66 of 151 steps (44%) done
+Execute 1 jobs...
+[Fri Aug  7 11:52:50 2026]
+localrule resample_im:
+    input: work/sub-P202/ses-preop/normalize/sub-P202_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P202/ses-preop/resample/sub-P202_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 29
+    reason: Missing output files: work/sub-P202/ses-preop/resample/sub-P202_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P202/ses-preop/normalize/sub-P202_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P202, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:52:56 2026]
+Finished jobid: 66 (Rule: n4_bias_correction)
+67 of 151 steps (44%) done
+Execute 1 jobs...
+[Fri Aug  7 11:52:56 2026]
+localrule norm_im:
+    input: work/sub-P281/ses-preop/n4biascorr/sub-P281_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P281/ses-preop/normalize/sub-P281_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 65
+    reason: Missing output files: work/sub-P281/ses-preop/normalize/sub-P281_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P281/ses-preop/n4biascorr/sub-P281_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P281, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:53:03 2026]
+Finished jobid: 29 (Rule: resample_im)
+68 of 151 steps (45%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:03 2026]
+localrule resample_im:
+    input: work/sub-P352/ses-preop/normalize/sub-P352_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P352/ses-preop/resample/sub-P352_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 99
+    reason: Missing output files: work/sub-P352/ses-preop/resample/sub-P352_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P352/ses-preop/normalize/sub-P352_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P352, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:53:09 2026]
+Finished jobid: 65 (Rule: norm_im)
+69 of 151 steps (46%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:09 2026]
+localrule resample_im:
+    input: work/sub-P205/ses-preop/normalize/sub-P205_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P205/ses-preop/resample/sub-P205_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 34
+    reason: Missing output files: work/sub-P205/ses-preop/resample/sub-P205_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P205/ses-preop/normalize/sub-P205_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P205, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:53:14 2026]
+Finished jobid: 99 (Rule: resample_im)
+70 of 151 steps (46%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:14 2026]
+localrule norm_im:
+    input: work/sub-P369/ses-preop/n4biascorr/sub-P369_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    output: work/sub-P369/ses-preop/normalize/sub-P369_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    jobid: 125
+    reason: Missing output files: work/sub-P369/ses-preop/normalize/sub-P369_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P369/ses-preop/n4biascorr/sub-P369_ses-preop_acq-ax_run-01_desc-n4corrected_T1w.nii.gz
+    wildcards: subject=P369, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 11:53:19 2026]
+Finished jobid: 125 (Rule: norm_im)
+71 of 151 steps (47%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:19 2026]
+localrule resample_im:
+    input: work/sub-P281/ses-preop/normalize/sub-P281_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P281/ses-preop/resample/sub-P281_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 64
+    reason: Missing output files: work/sub-P281/ses-preop/resample/sub-P281_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P281/ses-preop/normalize/sub-P281_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P281, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:53:20 2026]
+Finished jobid: 34 (Rule: resample_im)
+72 of 151 steps (48%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:20 2026]
+localrule resample_im:
+    input: work/sub-P369/ses-preop/normalize/sub-P369_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P369/ses-preop/resample/sub-P369_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 124
+    reason: Missing output files: work/sub-P369/ses-preop/resample/sub-P369_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P369/ses-preop/normalize/sub-P369_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P369, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:53:32 2026]
+Finished jobid: 124 (Rule: resample_im)
+73 of 151 steps (48%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:32 2026]
+localrule resample_im:
+    input: work/sub-P350/ses-preop/normalize/sub-P350_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    output: work/sub-P350/ses-preop/resample/sub-P350_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    jobid: 94
+    reason: Missing output files: work/sub-P350/ses-preop/resample/sub-P350_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz; Input files updated by another job: work/sub-P350/ses-preop/normalize/sub-P350_ses-preop_acq-ax_run-01_desc-zscore_T1w.nii.gz
+    wildcards: subject=P350, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/fd9ea35b16c4e2c41feeb821ac0ad38d_
+[Fri Aug  7 11:53:36 2026]
+Finished jobid: 64 (Rule: resample_im)
+74 of 151 steps (49%) done
+[Fri Aug  7 11:53:43 2026]
+Finished jobid: 94 (Rule: resample_im)
+75 of 151 steps (50%) done
+Execute 1 jobs...
+[Fri Aug  7 11:53:43 2026]
+localrule run_nnlm:
+    input: work/sub-P193/ses-preop/resample/sub-P193_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P193/ses-preop/afids-nnlm/sub-P193_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P193/ses-preop/afids-nnlm/sub-P193_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P193/ses-preop/sub-P193_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 23
+    reason: Missing output files: work/sub-P193/ses-preop/afids-nnlm/sub-P193_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P193/ses-preop/resample/sub-P193_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P193, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 11:56:45 2026]
+Finished jobid: 23 (Rule: run_nnlm)
+76 of 151 steps (50%) done
+Execute 1 jobs...
+[Fri Aug  7 11:56:45 2026]
+localrule run_nnlm:
+    input: work/sub-P289/ses-preop/resample/sub-P289_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P289/ses-preop/afids-nnlm/sub-P289_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P289/ses-preop/afids-nnlm/sub-P289_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P289/ses-preop/sub-P289_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 68
+    reason: Missing output files: work/sub-P289/ses-preop/afids-nnlm/sub-P289_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P289/ses-preop/resample/sub-P289_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P289, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 11:59:46 2026]
+Finished jobid: 68 (Rule: run_nnlm)
+77 of 151 steps (51%) done
+Execute 1 jobs...
+[Fri Aug  7 11:59:46 2026]
+localrule run_nnlm:
+    input: work/sub-P369/ses-preop/resample/sub-P369_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P369/ses-preop/afids-nnlm/sub-P369_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P369/ses-preop/afids-nnlm/sub-P369_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P369/ses-preop/sub-P369_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 123
+    reason: Missing output files: work/sub-P369/ses-preop/afids-nnlm/sub-P369_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P369/ses-preop/resample/sub-P369_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P369, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:02:49 2026]
+Finished jobid: 123 (Rule: run_nnlm)
+78 of 151 steps (52%) done
+Execute 2 jobs...
+[Fri Aug  7 12:02:49 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P369/ses-preop/afids-nnlm/sub-P369_ses-preop_acq-ax_run-01_coords.json, work/sub-P369/ses-preop/resample/sub-P369_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P369/ses-preop/afids-cnn/sub-P369_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 122
+    reason: Missing output files: sub-P369/ses-preop/afids-cnn/sub-P369_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P369/ses-preop/afids-nnlm/sub-P369_ses-preop_acq-ax_run-01_coords.json, work/sub-P369/ses-preop/resample/sub-P369_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P369, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:02:49 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P289/ses-preop/afids-nnlm/sub-P289_ses-preop_acq-ax_run-01_coords.json, work/sub-P289/ses-preop/resample/sub-P289_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P289/ses-preop/afids-cnn/sub-P289_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 67
+    reason: Missing output files: sub-P289/ses-preop/afids-cnn/sub-P289_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P289/ses-preop/resample/sub-P289_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P289/ses-preop/afids-nnlm/sub-P289_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P289, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:02:51 2026]
+Finished jobid: 122 (Rule: nnlm_to_fcsv)
+79 of 151 steps (52%) done
+Execute 1 jobs...
+[Fri Aug  7 12:02:51 2026]
+localrule stereotaxy:
+    input: sub-P369/ses-preop/afids-cnn/sub-P369_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P369/ses-preop/stereotaxy/sub-P369_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P369/ses-preop/stereotaxy/sub-P369_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P369/ses-preop/ACPCtransforms/sub-P369_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 156
+    reason: Missing output files: sub-P369/ses-preop/stereotaxy/sub-P369_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P369/ses-preop/afids-cnn/sub-P369_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P369, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:02:51 2026]
+Finished jobid: 67 (Rule: nnlm_to_fcsv)
+80 of 151 steps (53%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 12:02:51 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P193/ses-preop/afids-nnlm/sub-P193_ses-preop_acq-ax_run-01_coords.json, work/sub-P193/ses-preop/resample/sub-P193_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P193/ses-preop/afids-cnn/sub-P193_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 22
+    reason: Missing output files: sub-P193/ses-preop/afids-cnn/sub-P193_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P193/ses-preop/resample/sub-P193_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P193/ses-preop/afids-nnlm/sub-P193_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P193, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:02:52 2026]
+Finished jobid: 22 (Rule: nnlm_to_fcsv)
+81 of 151 steps (54%) done
+Execute 1 jobs...
+[Fri Aug  7 12:02:52 2026]
+localrule stereotaxy:
+    input: sub-P193/ses-preop/afids-cnn/sub-P193_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P193/ses-preop/stereotaxy/sub-P193_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P193/ses-preop/stereotaxy/sub-P193_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P193/ses-preop/ACPCtransforms/sub-P193_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 136
+    reason: Missing output files: sub-P193/ses-preop/stereotaxy/sub-P193_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P193/ses-preop/afids-cnn/sub-P193_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P193, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:02:52 2026]
+Finished jobid: 156 (Rule: stereotaxy)
+82 of 151 steps (54%) done
+Execute 1 jobs...
+[Fri Aug  7 12:02:52 2026]
+localrule stereotaxy:
+    input: sub-P289/ses-preop/afids-cnn/sub-P289_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P289/ses-preop/stereotaxy/sub-P289_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P289/ses-preop/stereotaxy/sub-P289_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P289/ses-preop/ACPCtransforms/sub-P289_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 145
+    reason: Missing output files: sub-P289/ses-preop/stereotaxy/sub-P289_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P289/ses-preop/afids-cnn/sub-P289_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P289, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:02:54 2026]
+Finished jobid: 136 (Rule: stereotaxy)
+83 of 151 steps (55%) done
+[Fri Aug  7 12:02:54 2026]
+Finished jobid: 145 (Rule: stereotaxy)
+84 of 151 steps (56%) done
+Execute 1 jobs...
+[Fri Aug  7 12:02:54 2026]
+localrule run_nnlm:
+    input: work/sub-P213/ses-preop/resample/sub-P213_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P213/ses-preop/afids-nnlm/sub-P213_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P213/ses-preop/afids-nnlm/sub-P213_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P213/ses-preop/sub-P213_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 38
+    reason: Missing output files: work/sub-P213/ses-preop/afids-nnlm/sub-P213_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P213/ses-preop/resample/sub-P213_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P213, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:05:55 2026]
+Finished jobid: 38 (Rule: run_nnlm)
+85 of 151 steps (56%) done
+Execute 1 jobs...
+[Fri Aug  7 12:05:55 2026]
+localrule run_nnlm:
+    input: work/sub-P353/ses-preop/resample/sub-P353_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P353/ses-preop/afids-nnlm/sub-P353_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P353/ses-preop/afids-nnlm/sub-P353_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P353/ses-preop/sub-P353_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 103
+    reason: Missing output files: work/sub-P353/ses-preop/afids-nnlm/sub-P353_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P353/ses-preop/resample/sub-P353_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P353, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:07:44 2026]
+Finished jobid: 103 (Rule: run_nnlm)
+86 of 151 steps (57%) done
+Execute 1 jobs...
+[Fri Aug  7 12:07:44 2026]
+localrule run_nnlm:
+    input: work/sub-P350/ses-preop/resample/sub-P350_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P350/ses-preop/afids-nnlm/sub-P350_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P350/ses-preop/afids-nnlm/sub-P350_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P350/ses-preop/sub-P350_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 93
+    reason: Missing output files: work/sub-P350/ses-preop/afids-nnlm/sub-P350_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P350/ses-preop/resample/sub-P350_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P350, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:10:05 2026]
+Finished jobid: 93 (Rule: run_nnlm)
+87 of 151 steps (58%) done
+Execute 2 jobs...
+[Fri Aug  7 12:10:05 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P213/ses-preop/afids-nnlm/sub-P213_ses-preop_acq-ax_run-01_coords.json, work/sub-P213/ses-preop/resample/sub-P213_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P213/ses-preop/afids-cnn/sub-P213_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 37
+    reason: Missing output files: sub-P213/ses-preop/afids-cnn/sub-P213_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P213/ses-preop/afids-nnlm/sub-P213_ses-preop_acq-ax_run-01_coords.json, work/sub-P213/ses-preop/resample/sub-P213_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P213, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:10:05 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P350/ses-preop/afids-nnlm/sub-P350_ses-preop_acq-ax_run-01_coords.json, work/sub-P350/ses-preop/resample/sub-P350_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P350/ses-preop/afids-cnn/sub-P350_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 92
+    reason: Missing output files: sub-P350/ses-preop/afids-cnn/sub-P350_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P350/ses-preop/resample/sub-P350_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P350/ses-preop/afids-nnlm/sub-P350_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P350, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:10:06 2026]
+Finished jobid: 92 (Rule: nnlm_to_fcsv)
+88 of 151 steps (58%) done
+Execute 1 jobs...
+[Fri Aug  7 12:10:06 2026]
+localrule stereotaxy:
+    input: sub-P350/ses-preop/afids-cnn/sub-P350_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P350/ses-preop/stereotaxy/sub-P350_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P350/ses-preop/stereotaxy/sub-P350_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P350/ses-preop/ACPCtransforms/sub-P350_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 150
+    reason: Missing output files: sub-P350/ses-preop/stereotaxy/sub-P350_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P350/ses-preop/afids-cnn/sub-P350_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P350, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:10:06 2026]
+Finished jobid: 37 (Rule: nnlm_to_fcsv)
+89 of 151 steps (59%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 12:10:06 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P353/ses-preop/afids-nnlm/sub-P353_ses-preop_acq-ax_run-01_coords.json, work/sub-P353/ses-preop/resample/sub-P353_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P353/ses-preop/afids-cnn/sub-P353_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 102
+    reason: Missing output files: sub-P353/ses-preop/afids-cnn/sub-P353_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P353/ses-preop/afids-nnlm/sub-P353_ses-preop_acq-ax_run-01_coords.json, work/sub-P353/ses-preop/resample/sub-P353_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P353, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:10:07 2026]
+Finished jobid: 102 (Rule: nnlm_to_fcsv)
+90 of 151 steps (60%) done
+Execute 1 jobs...
+[Fri Aug  7 12:10:07 2026]
+localrule stereotaxy:
+    input: sub-P353/ses-preop/afids-cnn/sub-P353_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P353/ses-preop/stereotaxy/sub-P353_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P353/ses-preop/stereotaxy/sub-P353_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P353/ses-preop/ACPCtransforms/sub-P353_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 152
+    reason: Missing output files: sub-P353/ses-preop/stereotaxy/sub-P353_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P353/ses-preop/afids-cnn/sub-P353_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P353, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:10:08 2026]
+Finished jobid: 150 (Rule: stereotaxy)
+91 of 151 steps (60%) done
+Execute 1 jobs...
+[Fri Aug  7 12:10:08 2026]
+localrule stereotaxy:
+    input: sub-P213/ses-preop/afids-cnn/sub-P213_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P213/ses-preop/stereotaxy/sub-P213_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P213/ses-preop/stereotaxy/sub-P213_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P213/ses-preop/ACPCtransforms/sub-P213_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 139
+    reason: Missing output files: sub-P213/ses-preop/stereotaxy/sub-P213_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P213/ses-preop/afids-cnn/sub-P213_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P213, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:10:09 2026]
+Finished jobid: 152 (Rule: stereotaxy)
+92 of 151 steps (61%) done
+[Fri Aug  7 12:10:09 2026]
+Finished jobid: 139 (Rule: stereotaxy)
+93 of 151 steps (62%) done
+Execute 1 jobs...
+[Fri Aug  7 12:10:10 2026]
+localrule run_nnlm:
+    input: work/sub-P182/ses-preop/resample/sub-P182_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P182/ses-preop/afids-nnlm/sub-P182_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P182/ses-preop/afids-nnlm/sub-P182_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P182/ses-preop/sub-P182_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 18
+    reason: Missing output files: work/sub-P182/ses-preop/afids-nnlm/sub-P182_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P182/ses-preop/resample/sub-P182_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P182, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:13:09 2026]
+Finished jobid: 18 (Rule: run_nnlm)
+94 of 151 steps (62%) done
+Execute 1 jobs...
+[Fri Aug  7 12:13:09 2026]
+localrule run_nnlm:
+    input: work/sub-P293/ses-preop/resample/sub-P293_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P293/ses-preop/afids-nnlm/sub-P293_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P293/ses-preop/afids-nnlm/sub-P293_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P293/ses-preop/sub-P293_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 78
+    reason: Missing output files: work/sub-P293/ses-preop/afids-nnlm/sub-P293_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P293/ses-preop/resample/sub-P293_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P293, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:16:14 2026]
+Finished jobid: 78 (Rule: run_nnlm)
+95 of 151 steps (63%) done
+Execute 1 jobs...
+[Fri Aug  7 12:16:14 2026]
+localrule run_nnlm:
+    input: work/sub-P221/ses-preop/resample/sub-P221_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P221/ses-preop/afids-nnlm/sub-P221_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P221/ses-preop/afids-nnlm/sub-P221_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P221/ses-preop/sub-P221_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 48
+    reason: Missing output files: work/sub-P221/ses-preop/afids-nnlm/sub-P221_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P221/ses-preop/resample/sub-P221_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P221, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:19:19 2026]
+Finished jobid: 48 (Rule: run_nnlm)
+96 of 151 steps (64%) done
+Execute 2 jobs...
+[Fri Aug  7 12:19:19 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P182/ses-preop/afids-nnlm/sub-P182_ses-preop_acq-ax_run-01_coords.json, work/sub-P182/ses-preop/resample/sub-P182_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P182/ses-preop/afids-cnn/sub-P182_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 17
+    reason: Missing output files: sub-P182/ses-preop/afids-cnn/sub-P182_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P182/ses-preop/resample/sub-P182_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P182/ses-preop/afids-nnlm/sub-P182_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P182, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:19:19 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P221/ses-preop/afids-nnlm/sub-P221_ses-preop_acq-ax_run-01_coords.json, work/sub-P221/ses-preop/resample/sub-P221_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P221/ses-preop/afids-cnn/sub-P221_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 47
+    reason: Missing output files: sub-P221/ses-preop/afids-cnn/sub-P221_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P221/ses-preop/afids-nnlm/sub-P221_ses-preop_acq-ax_run-01_coords.json, work/sub-P221/ses-preop/resample/sub-P221_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P221, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:19:20 2026]
+Finished jobid: 47 (Rule: nnlm_to_fcsv)
+97 of 151 steps (64%) done
+Execute 1 jobs...
+[Fri Aug  7 12:19:20 2026]
+localrule stereotaxy:
+    input: sub-P221/ses-preop/afids-cnn/sub-P221_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P221/ses-preop/stereotaxy/sub-P221_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P221/ses-preop/stereotaxy/sub-P221_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P221/ses-preop/ACPCtransforms/sub-P221_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 141
+    reason: Missing output files: sub-P221/ses-preop/stereotaxy/sub-P221_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P221/ses-preop/afids-cnn/sub-P221_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P221, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:19:20 2026]
+Finished jobid: 17 (Rule: nnlm_to_fcsv)
+98 of 151 steps (65%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 12:19:21 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P293/ses-preop/afids-nnlm/sub-P293_ses-preop_acq-ax_run-01_coords.json, work/sub-P293/ses-preop/resample/sub-P293_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P293/ses-preop/afids-cnn/sub-P293_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 77
+    reason: Missing output files: sub-P293/ses-preop/afids-cnn/sub-P293_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P293/ses-preop/resample/sub-P293_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P293/ses-preop/afids-nnlm/sub-P293_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P293, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:19:22 2026]
+Finished jobid: 77 (Rule: nnlm_to_fcsv)
+99 of 151 steps (66%) done
+Execute 1 jobs...
+[Fri Aug  7 12:19:22 2026]
+localrule stereotaxy:
+    input: sub-P182/ses-preop/afids-cnn/sub-P182_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P182/ses-preop/stereotaxy/sub-P182_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P182/ses-preop/stereotaxy/sub-P182_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P182/ses-preop/ACPCtransforms/sub-P182_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 135
+    reason: Missing output files: sub-P182/ses-preop/stereotaxy/sub-P182_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P182/ses-preop/afids-cnn/sub-P182_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P182, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:19:22 2026]
+Finished jobid: 141 (Rule: stereotaxy)
+100 of 151 steps (66%) done
+Execute 1 jobs...
+[Fri Aug  7 12:19:22 2026]
+localrule stereotaxy:
+    input: sub-P293/ses-preop/afids-cnn/sub-P293_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P293/ses-preop/stereotaxy/sub-P293_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P293/ses-preop/stereotaxy/sub-P293_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P293/ses-preop/ACPCtransforms/sub-P293_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 147
+    reason: Missing output files: sub-P293/ses-preop/stereotaxy/sub-P293_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P293/ses-preop/afids-cnn/sub-P293_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P293, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:19:23 2026]
+Finished jobid: 135 (Rule: stereotaxy)
+101 of 151 steps (67%) done
+[Fri Aug  7 12:19:24 2026]
+Finished jobid: 147 (Rule: stereotaxy)
+102 of 151 steps (68%) done
+Execute 1 jobs...
+[Fri Aug  7 12:19:24 2026]
+localrule run_nnlm:
+    input: work/sub-P352/ses-preop/resample/sub-P352_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P352/ses-preop/afids-nnlm/sub-P352_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P352/ses-preop/afids-nnlm/sub-P352_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P352/ses-preop/sub-P352_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 98
+    reason: Missing output files: work/sub-P352/ses-preop/afids-nnlm/sub-P352_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P352/ses-preop/resample/sub-P352_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P352, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:22:26 2026]
+Finished jobid: 98 (Rule: run_nnlm)
+103 of 151 steps (68%) done
+Execute 1 jobs...
+[Fri Aug  7 12:22:26 2026]
+localrule run_nnlm:
+    input: work/sub-P367/ses-preop/resample/sub-P367_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P367/ses-preop/afids-nnlm/sub-P367_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P367/ses-preop/afids-nnlm/sub-P367_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P367/ses-preop/sub-P367_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 118
+    reason: Missing output files: work/sub-P367/ses-preop/afids-nnlm/sub-P367_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P367/ses-preop/resample/sub-P367_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P367, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:27:49 2026]
+Finished jobid: 118 (Rule: run_nnlm)
+104 of 151 steps (69%) done
+Execute 1 jobs...
+[Fri Aug  7 12:27:49 2026]
+localrule run_nnlm:
+    input: work/sub-P202/ses-preop/resample/sub-P202_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P202/ses-preop/afids-nnlm/sub-P202_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P202/ses-preop/afids-nnlm/sub-P202_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P202/ses-preop/sub-P202_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 28
+    reason: Missing output files: work/sub-P202/ses-preop/afids-nnlm/sub-P202_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P202/ses-preop/resample/sub-P202_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P202, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:32:03 2026]
+Finished jobid: 28 (Rule: run_nnlm)
+105 of 151 steps (70%) done
+Execute 2 jobs...
+[Fri Aug  7 12:32:03 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P367/ses-preop/afids-nnlm/sub-P367_ses-preop_acq-ax_run-01_coords.json, work/sub-P367/ses-preop/resample/sub-P367_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P367/ses-preop/afids-cnn/sub-P367_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 117
+    reason: Missing output files: sub-P367/ses-preop/afids-cnn/sub-P367_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P367/ses-preop/afids-nnlm/sub-P367_ses-preop_acq-ax_run-01_coords.json, work/sub-P367/ses-preop/resample/sub-P367_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P367, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:32:03 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P202/ses-preop/afids-nnlm/sub-P202_ses-preop_acq-ax_run-01_coords.json, work/sub-P202/ses-preop/resample/sub-P202_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P202/ses-preop/afids-cnn/sub-P202_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 27
+    reason: Missing output files: sub-P202/ses-preop/afids-cnn/sub-P202_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P202/ses-preop/afids-nnlm/sub-P202_ses-preop_acq-ax_run-01_coords.json, work/sub-P202/ses-preop/resample/sub-P202_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P202, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:32:04 2026]
+Finished jobid: 27 (Rule: nnlm_to_fcsv)
+106 of 151 steps (70%) done
+Execute 1 jobs...
+[Fri Aug  7 12:32:04 2026]
+localrule stereotaxy:
+    input: sub-P202/ses-preop/afids-cnn/sub-P202_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P202/ses-preop/stereotaxy/sub-P202_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P202/ses-preop/stereotaxy/sub-P202_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P202/ses-preop/ACPCtransforms/sub-P202_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 137
+    reason: Missing output files: sub-P202/ses-preop/stereotaxy/sub-P202_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P202/ses-preop/afids-cnn/sub-P202_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P202, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:32:04 2026]
+Finished jobid: 117 (Rule: nnlm_to_fcsv)
+107 of 151 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 12:32:04 2026]
+localrule stereotaxy:
+    input: sub-P367/ses-preop/afids-cnn/sub-P367_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P367/ses-preop/stereotaxy/sub-P367_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P367/ses-preop/stereotaxy/sub-P367_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P367/ses-preop/ACPCtransforms/sub-P367_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 155
+    reason: Missing output files: sub-P367/ses-preop/stereotaxy/sub-P367_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P367/ses-preop/afids-cnn/sub-P367_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P367, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:32:06 2026]
+Finished jobid: 137 (Rule: stereotaxy)
+108 of 151 steps (72%) done
+Execute 1 jobs...
+[Fri Aug  7 12:32:06 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P352/ses-preop/afids-nnlm/sub-P352_ses-preop_acq-ax_run-01_coords.json, work/sub-P352/ses-preop/resample/sub-P352_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P352/ses-preop/afids-cnn/sub-P352_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 97
+    reason: Missing output files: sub-P352/ses-preop/afids-cnn/sub-P352_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P352/ses-preop/afids-nnlm/sub-P352_ses-preop_acq-ax_run-01_coords.json, work/sub-P352/ses-preop/resample/sub-P352_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P352, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+[Fri Aug  7 12:32:06 2026]
+Finished jobid: 155 (Rule: stereotaxy)
+109 of 151 steps (72%) done
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:32:08 2026]
+Finished jobid: 97 (Rule: nnlm_to_fcsv)
+110 of 151 steps (73%) done
+Execute 1 jobs...
+[Fri Aug  7 12:32:08 2026]
+localrule run_nnlm:
+    input: work/sub-P277/ses-preop/resample/sub-P277_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P277/ses-preop/afids-nnlm/sub-P277_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P277/ses-preop/afids-nnlm/sub-P277_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P277/ses-preop/sub-P277_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 58
+    reason: Missing output files: work/sub-P277/ses-preop/afids-nnlm/sub-P277_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P277/ses-preop/resample/sub-P277_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P277, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:36:04 2026]
+Finished jobid: 58 (Rule: run_nnlm)
+111 of 151 steps (74%) done
+Execute 1 jobs...
+[Fri Aug  7 12:36:04 2026]
+localrule run_nnlm:
+    input: work/sub-P328/ses-preop/resample/sub-P328_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P328/ses-preop/afids-nnlm/sub-P328_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P328/ses-preop/afids-nnlm/sub-P328_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P328/ses-preop/sub-P328_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 88
+    reason: Missing output files: work/sub-P328/ses-preop/afids-nnlm/sub-P328_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P328/ses-preop/resample/sub-P328_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P328, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:39:08 2026]
+Finished jobid: 88 (Rule: run_nnlm)
+112 of 151 steps (74%) done
+Execute 2 jobs...
+[Fri Aug  7 12:39:08 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P277/ses-preop/afids-nnlm/sub-P277_ses-preop_acq-ax_run-01_coords.json, work/sub-P277/ses-preop/resample/sub-P277_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P277/ses-preop/afids-cnn/sub-P277_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 57
+    reason: Missing output files: sub-P277/ses-preop/afids-cnn/sub-P277_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P277/ses-preop/afids-nnlm/sub-P277_ses-preop_acq-ax_run-01_coords.json, work/sub-P277/ses-preop/resample/sub-P277_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P277, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:39:08 2026]
+localrule stereotaxy:
+    input: sub-P352/ses-preop/afids-cnn/sub-P352_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P352/ses-preop/stereotaxy/sub-P352_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P352/ses-preop/stereotaxy/sub-P352_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P352/ses-preop/ACPCtransforms/sub-P352_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 151
+    reason: Missing output files: sub-P352/ses-preop/stereotaxy/sub-P352_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P352/ses-preop/afids-cnn/sub-P352_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P352, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:39:09 2026]
+Finished jobid: 57 (Rule: nnlm_to_fcsv)
+113 of 151 steps (75%) done
+Execute 1 jobs...
+[Fri Aug  7 12:39:09 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P328/ses-preop/afids-nnlm/sub-P328_ses-preop_acq-ax_run-01_coords.json, work/sub-P328/ses-preop/resample/sub-P328_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P328/ses-preop/afids-cnn/sub-P328_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 87
+    reason: Missing output files: sub-P328/ses-preop/afids-cnn/sub-P328_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P328/ses-preop/resample/sub-P328_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P328/ses-preop/afids-nnlm/sub-P328_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P328, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:39:10 2026]
+Finished jobid: 151 (Rule: stereotaxy)
+114 of 151 steps (75%) done
+Execute 1 jobs...
+[Fri Aug  7 12:39:10 2026]
+localrule stereotaxy:
+    input: sub-P277/ses-preop/afids-cnn/sub-P277_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P277/ses-preop/stereotaxy/sub-P277_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P277/ses-preop/stereotaxy/sub-P277_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P277/ses-preop/ACPCtransforms/sub-P277_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 143
+    reason: Missing output files: sub-P277/ses-preop/stereotaxy/sub-P277_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P277/ses-preop/afids-cnn/sub-P277_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P277, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:39:10 2026]
+Finished jobid: 87 (Rule: nnlm_to_fcsv)
+115 of 151 steps (76%) done
+Execute 1 jobs...
+[Fri Aug  7 12:39:10 2026]
+localrule stereotaxy:
+    input: sub-P328/ses-preop/afids-cnn/sub-P328_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P328/ses-preop/stereotaxy/sub-P328_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P328/ses-preop/stereotaxy/sub-P328_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P328/ses-preop/ACPCtransforms/sub-P328_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 149
+    reason: Missing output files: sub-P328/ses-preop/stereotaxy/sub-P328_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P328/ses-preop/afids-cnn/sub-P328_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P328, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:39:12 2026]
+Finished jobid: 143 (Rule: stereotaxy)
+116 of 151 steps (77%) done
+[Fri Aug  7 12:39:12 2026]
+Finished jobid: 149 (Rule: stereotaxy)
+117 of 151 steps (77%) done
+Execute 1 jobs...
+[Fri Aug  7 12:39:12 2026]
+localrule run_nnlm:
+    input: work/sub-P214/ses-preop/resample/sub-P214_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P214/ses-preop/afids-nnlm/sub-P214_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P214/ses-preop/afids-nnlm/sub-P214_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P214/ses-preop/sub-P214_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 43
+    reason: Missing output files: work/sub-P214/ses-preop/afids-nnlm/sub-P214_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P214/ses-preop/resample/sub-P214_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P214, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:42:56 2026]
+Finished jobid: 43 (Rule: run_nnlm)
+118 of 151 steps (78%) done
+Execute 1 jobs...
+[Fri Aug  7 12:42:56 2026]
+localrule run_nnlm:
+    input: work/sub-P355/ses-preop/resample/sub-P355_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P355/ses-preop/afids-nnlm/sub-P355_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P355/ses-preop/afids-nnlm/sub-P355_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P355/ses-preop/sub-P355_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 108
+    reason: Missing output files: work/sub-P355/ses-preop/afids-nnlm/sub-P355_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P355/ses-preop/resample/sub-P355_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P355, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:46:14 2026]
+Finished jobid: 108 (Rule: run_nnlm)
+119 of 151 steps (79%) done
+Execute 1 jobs...
+[Fri Aug  7 12:46:14 2026]
+localrule run_nnlm:
+    input: work/sub-P374/ses-preop/resample/sub-P374_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P374/ses-preop/afids-nnlm/sub-P374_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P374/ses-preop/afids-nnlm/sub-P374_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P374/ses-preop/sub-P374_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 128
+    reason: Missing output files: work/sub-P374/ses-preop/afids-nnlm/sub-P374_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P374/ses-preop/resample/sub-P374_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P374, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:49:29 2026]
+Finished jobid: 128 (Rule: run_nnlm)
+120 of 151 steps (79%) done
+Execute 2 jobs...
+[Fri Aug  7 12:49:29 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P355/ses-preop/afids-nnlm/sub-P355_ses-preop_acq-ax_run-01_coords.json, work/sub-P355/ses-preop/resample/sub-P355_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P355/ses-preop/afids-cnn/sub-P355_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 107
+    reason: Missing output files: sub-P355/ses-preop/afids-cnn/sub-P355_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P355/ses-preop/resample/sub-P355_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P355/ses-preop/afids-nnlm/sub-P355_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P355, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:49:29 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P214/ses-preop/afids-nnlm/sub-P214_ses-preop_acq-ax_run-01_coords.json, work/sub-P214/ses-preop/resample/sub-P214_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P214/ses-preop/afids-cnn/sub-P214_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 42
+    reason: Missing output files: sub-P214/ses-preop/afids-cnn/sub-P214_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P214/ses-preop/resample/sub-P214_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P214/ses-preop/afids-nnlm/sub-P214_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P214, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:49:30 2026]
+Finished jobid: 42 (Rule: nnlm_to_fcsv)
+121 of 151 steps (80%) done
+Execute 1 jobs...
+[Fri Aug  7 12:49:30 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P374/ses-preop/afids-nnlm/sub-P374_ses-preop_acq-ax_run-01_coords.json, work/sub-P374/ses-preop/resample/sub-P374_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P374/ses-preop/afids-cnn/sub-P374_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 127
+    reason: Missing output files: sub-P374/ses-preop/afids-cnn/sub-P374_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P374/ses-preop/resample/sub-P374_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P374/ses-preop/afids-nnlm/sub-P374_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P374, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:49:30 2026]
+Finished jobid: 107 (Rule: nnlm_to_fcsv)
+122 of 151 steps (81%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 12:49:30 2026]
+localrule stereotaxy:
+    input: sub-P355/ses-preop/afids-cnn/sub-P355_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P355/ses-preop/stereotaxy/sub-P355_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P355/ses-preop/stereotaxy/sub-P355_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P355/ses-preop/ACPCtransforms/sub-P355_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 153
+    reason: Missing output files: sub-P355/ses-preop/stereotaxy/sub-P355_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P355/ses-preop/afids-cnn/sub-P355_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P355, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:49:32 2026]
+Finished jobid: 127 (Rule: nnlm_to_fcsv)
+123 of 151 steps (81%) done
+Execute 1 jobs...
+[Fri Aug  7 12:49:32 2026]
+localrule stereotaxy:
+    input: sub-P374/ses-preop/afids-cnn/sub-P374_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P374/ses-preop/stereotaxy/sub-P374_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P374/ses-preop/stereotaxy/sub-P374_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P374/ses-preop/ACPCtransforms/sub-P374_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 157
+    reason: Missing output files: sub-P374/ses-preop/stereotaxy/sub-P374_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P374/ses-preop/afids-cnn/sub-P374_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P374, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:49:32 2026]
+Finished jobid: 153 (Rule: stereotaxy)
+124 of 151 steps (82%) done
+Execute 1 jobs...
+[Fri Aug  7 12:49:32 2026]
+localrule stereotaxy:
+    input: sub-P214/ses-preop/afids-cnn/sub-P214_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P214/ses-preop/stereotaxy/sub-P214_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P214/ses-preop/stereotaxy/sub-P214_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P214/ses-preop/ACPCtransforms/sub-P214_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 140
+    reason: Missing output files: sub-P214/ses-preop/stereotaxy/sub-P214_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P214/ses-preop/afids-cnn/sub-P214_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P214, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:49:33 2026]
+Finished jobid: 157 (Rule: stereotaxy)
+125 of 151 steps (83%) done
+[Fri Aug  7 12:49:34 2026]
+Finished jobid: 140 (Rule: stereotaxy)
+126 of 151 steps (83%) done
+Execute 1 jobs...
+[Fri Aug  7 12:49:34 2026]
+localrule run_nnlm:
+    input: work/sub-P175/ses-preop/resample/sub-P175_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P175/ses-preop/afids-nnlm/sub-P175_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P175/ses-preop/afids-nnlm/sub-P175_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P175/ses-preop/sub-P175_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 13
+    reason: Missing output files: work/sub-P175/ses-preop/afids-nnlm/sub-P175_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P175/ses-preop/resample/sub-P175_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P175, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:52:37 2026]
+Finished jobid: 13 (Rule: run_nnlm)
+127 of 151 steps (84%) done
+Execute 1 jobs...
+[Fri Aug  7 12:52:37 2026]
+localrule run_nnlm:
+    input: work/sub-P292/ses-preop/resample/sub-P292_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P292/ses-preop/afids-nnlm/sub-P292_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P292/ses-preop/afids-nnlm/sub-P292_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P292/ses-preop/sub-P292_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 73
+    reason: Missing output files: work/sub-P292/ses-preop/afids-nnlm/sub-P292_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P292/ses-preop/resample/sub-P292_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P292, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:55:42 2026]
+Finished jobid: 73 (Rule: run_nnlm)
+128 of 151 steps (85%) done
+Execute 1 jobs...
+[Fri Aug  7 12:55:42 2026]
+localrule run_nnlm:
+    input: work/sub-P256/ses-preop/resample/sub-P256_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P256/ses-preop/afids-nnlm/sub-P256_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P256/ses-preop/afids-nnlm/sub-P256_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P256/ses-preop/sub-P256_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 53
+    reason: Missing output files: work/sub-P256/ses-preop/afids-nnlm/sub-P256_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P256/ses-preop/resample/sub-P256_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P256, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 12:58:48 2026]
+Finished jobid: 53 (Rule: run_nnlm)
+129 of 151 steps (85%) done
+Execute 2 jobs...
+[Fri Aug  7 12:58:48 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P256/ses-preop/afids-nnlm/sub-P256_ses-preop_acq-ax_run-01_coords.json, work/sub-P256/ses-preop/resample/sub-P256_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P256/ses-preop/afids-cnn/sub-P256_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 52
+    reason: Missing output files: sub-P256/ses-preop/afids-cnn/sub-P256_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P256/ses-preop/resample/sub-P256_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P256/ses-preop/afids-nnlm/sub-P256_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P256, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 12:58:48 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P175/ses-preop/afids-nnlm/sub-P175_ses-preop_acq-ax_run-01_coords.json, work/sub-P175/ses-preop/resample/sub-P175_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P175/ses-preop/afids-cnn/sub-P175_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 12
+    reason: Missing output files: sub-P175/ses-preop/afids-cnn/sub-P175_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P175/ses-preop/resample/sub-P175_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P175/ses-preop/afids-nnlm/sub-P175_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P175, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:58:49 2026]
+Finished jobid: 12 (Rule: nnlm_to_fcsv)
+130 of 151 steps (86%) done
+Execute 1 jobs...
+[Fri Aug  7 12:58:49 2026]
+localrule stereotaxy:
+    input: sub-P175/ses-preop/afids-cnn/sub-P175_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P175/ses-preop/stereotaxy/sub-P175_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P175/ses-preop/stereotaxy/sub-P175_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P175/ses-preop/ACPCtransforms/sub-P175_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 134
+    reason: Missing output files: sub-P175/ses-preop/stereotaxy/sub-P175_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P175/ses-preop/afids-cnn/sub-P175_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P175, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:58:49 2026]
+Finished jobid: 52 (Rule: nnlm_to_fcsv)
+131 of 151 steps (87%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 12:58:49 2026]
+localrule stereotaxy:
+    input: sub-P256/ses-preop/afids-cnn/sub-P256_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P256/ses-preop/stereotaxy/sub-P256_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P256/ses-preop/stereotaxy/sub-P256_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P256/ses-preop/ACPCtransforms/sub-P256_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 142
+    reason: Missing output files: sub-P256/ses-preop/stereotaxy/sub-P256_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P256/ses-preop/afids-cnn/sub-P256_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P256, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 12:58:51 2026]
+Finished jobid: 134 (Rule: stereotaxy)
+132 of 151 steps (87%) done
+Execute 1 jobs...
+[Fri Aug  7 12:58:51 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P292/ses-preop/afids-nnlm/sub-P292_ses-preop_acq-ax_run-01_coords.json, work/sub-P292/ses-preop/resample/sub-P292_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P292/ses-preop/afids-cnn/sub-P292_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 72
+    reason: Missing output files: sub-P292/ses-preop/afids-cnn/sub-P292_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P292/ses-preop/resample/sub-P292_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P292/ses-preop/afids-nnlm/sub-P292_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P292, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:58:51 2026]
+Finished jobid: 142 (Rule: stereotaxy)
+133 of 151 steps (88%) done
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 12:58:52 2026]
+Finished jobid: 72 (Rule: nnlm_to_fcsv)
+134 of 151 steps (89%) done
+Execute 1 jobs...
+[Fri Aug  7 12:58:52 2026]
+localrule run_nnlm:
+    input: work/sub-P205/ses-preop/resample/sub-P205_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P205/ses-preop/afids-nnlm/sub-P205_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P205/ses-preop/afids-nnlm/sub-P205_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P205/ses-preop/sub-P205_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 33
+    reason: Missing output files: work/sub-P205/ses-preop/afids-nnlm/sub-P205_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P205/ses-preop/resample/sub-P205_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P205, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 13:01:58 2026]
+Finished jobid: 33 (Rule: run_nnlm)
+135 of 151 steps (89%) done
+Execute 1 jobs...
+[Fri Aug  7 13:01:58 2026]
+localrule run_nnlm:
+    input: work/sub-P281/ses-preop/resample/sub-P281_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P281/ses-preop/afids-nnlm/sub-P281_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P281/ses-preop/afids-nnlm/sub-P281_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P281/ses-preop/sub-P281_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 63
+    reason: Missing output files: work/sub-P281/ses-preop/afids-nnlm/sub-P281_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P281/ses-preop/resample/sub-P281_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P281, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 13:05:02 2026]
+Finished jobid: 63 (Rule: run_nnlm)
+136 of 151 steps (90%) done
+Execute 2 jobs...
+[Fri Aug  7 13:05:02 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P281/ses-preop/afids-nnlm/sub-P281_ses-preop_acq-ax_run-01_coords.json, work/sub-P281/ses-preop/resample/sub-P281_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P281/ses-preop/afids-cnn/sub-P281_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 62
+    reason: Missing output files: sub-P281/ses-preop/afids-cnn/sub-P281_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P281/ses-preop/resample/sub-P281_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P281/ses-preop/afids-nnlm/sub-P281_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P281, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 13:05:02 2026]
+localrule stereotaxy:
+    input: sub-P292/ses-preop/afids-cnn/sub-P292_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P292/ses-preop/stereotaxy/sub-P292_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P292/ses-preop/stereotaxy/sub-P292_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P292/ses-preop/ACPCtransforms/sub-P292_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 146
+    reason: Missing output files: sub-P292/ses-preop/stereotaxy/sub-P292_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P292/ses-preop/afids-cnn/sub-P292_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P292, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 13:05:03 2026]
+Finished jobid: 62 (Rule: nnlm_to_fcsv)
+137 of 151 steps (91%) done
+Execute 1 jobs...
+[Fri Aug  7 13:05:03 2026]
+localrule stereotaxy:
+    input: sub-P281/ses-preop/afids-cnn/sub-P281_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P281/ses-preop/stereotaxy/sub-P281_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P281/ses-preop/stereotaxy/sub-P281_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P281/ses-preop/ACPCtransforms/sub-P281_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 144
+    reason: Missing output files: sub-P281/ses-preop/stereotaxy/sub-P281_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P281/ses-preop/afids-cnn/sub-P281_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P281, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 13:05:04 2026]
+Finished jobid: 146 (Rule: stereotaxy)
+138 of 151 steps (91%) done
+Execute 1 jobs...
+[Fri Aug  7 13:05:04 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P205/ses-preop/afids-nnlm/sub-P205_ses-preop_acq-ax_run-01_coords.json, work/sub-P205/ses-preop/resample/sub-P205_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P205/ses-preop/afids-cnn/sub-P205_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 32
+    reason: Missing output files: sub-P205/ses-preop/afids-cnn/sub-P205_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P205/ses-preop/resample/sub-P205_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P205/ses-preop/afids-nnlm/sub-P205_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P205, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 13:05:05 2026]
+Finished jobid: 144 (Rule: stereotaxy)
+139 of 151 steps (92%) done
+[Fri Aug  7 13:05:05 2026]
+Finished jobid: 32 (Rule: nnlm_to_fcsv)
+140 of 151 steps (93%) done
+Execute 1 jobs...
+[Fri Aug  7 13:05:05 2026]
+localrule run_nnlm:
+    input: work/sub-P359/ses-preop/resample/sub-P359_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P359/ses-preop/afids-nnlm/sub-P359_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P359/ses-preop/afids-nnlm/sub-P359_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P359/ses-preop/sub-P359_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 113
+    reason: Missing output files: work/sub-P359/ses-preop/afids-nnlm/sub-P359_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P359/ses-preop/resample/sub-P359_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P359, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 13:08:09 2026]
+Finished jobid: 113 (Rule: run_nnlm)
+141 of 151 steps (93%) done
+Execute 1 jobs...
+[Fri Aug  7 13:08:09 2026]
+localrule run_nnlm:
+    input: work/sub-P167/ses-preop/resample/sub-P167_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P167/ses-preop/afids-nnlm/sub-P167_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P167/ses-preop/afids-nnlm/sub-P167_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P167/ses-preop/sub-P167_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 8
+    reason: Missing output files: work/sub-P167/ses-preop/afids-nnlm/sub-P167_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P167/ses-preop/resample/sub-P167_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P167, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+Select jobs to execute...
+[Fri Aug  7 13:11:53 2026]
+Finished jobid: 8 (Rule: run_nnlm)
+142 of 151 steps (94%) done
+Execute 2 jobs...
+[Fri Aug  7 13:11:53 2026]
+localrule stereotaxy:
+    input: sub-P205/ses-preop/afids-cnn/sub-P205_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P205/ses-preop/stereotaxy/sub-P205_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P205/ses-preop/stereotaxy/sub-P205_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P205/ses-preop/ACPCtransforms/sub-P205_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 138
+    reason: Missing output files: sub-P205/ses-preop/stereotaxy/sub-P205_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P205/ses-preop/afids-cnn/sub-P205_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P205, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 13:11:53 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P167/ses-preop/afids-nnlm/sub-P167_ses-preop_acq-ax_run-01_coords.json, work/sub-P167/ses-preop/resample/sub-P167_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P167/ses-preop/afids-cnn/sub-P167_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 7
+    reason: Missing output files: sub-P167/ses-preop/afids-cnn/sub-P167_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P167/ses-preop/resample/sub-P167_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P167/ses-preop/afids-nnlm/sub-P167_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P167, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 13:11:54 2026]
+Finished jobid: 7 (Rule: nnlm_to_fcsv)
+143 of 151 steps (95%) done
+Execute 1 jobs...
+[Fri Aug  7 13:11:54 2026]
+localrule stereotaxy:
+    input: sub-P167/ses-preop/afids-cnn/sub-P167_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P167/ses-preop/stereotaxy/sub-P167_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P167/ses-preop/stereotaxy/sub-P167_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P167/ses-preop/ACPCtransforms/sub-P167_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 133
+    reason: Missing output files: sub-P167/ses-preop/stereotaxy/sub-P167_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P167/ses-preop/afids-cnn/sub-P167_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P167, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 13:11:55 2026]
+Finished jobid: 138 (Rule: stereotaxy)
+144 of 151 steps (95%) done
+Execute 1 jobs...
+[Fri Aug  7 13:11:55 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P359/ses-preop/afids-nnlm/sub-P359_ses-preop_acq-ax_run-01_coords.json, work/sub-P359/ses-preop/resample/sub-P359_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P359/ses-preop/afids-cnn/sub-P359_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 112
+    reason: Missing output files: sub-P359/ses-preop/afids-cnn/sub-P359_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P359/ses-preop/resample/sub-P359_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P359/ses-preop/afids-nnlm/sub-P359_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P359, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 13:11:56 2026]
+Finished jobid: 112 (Rule: nnlm_to_fcsv)
+145 of 151 steps (96%) done
+Execute 1 jobs...
+[Fri Aug  7 13:11:56 2026]
+localrule stereotaxy:
+    input: sub-P359/ses-preop/afids-cnn/sub-P359_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P359/ses-preop/stereotaxy/sub-P359_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P359/ses-preop/stereotaxy/sub-P359_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P359/ses-preop/ACPCtransforms/sub-P359_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 154
+    reason: Missing output files: sub-P359/ses-preop/stereotaxy/sub-P359_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P359/ses-preop/afids-cnn/sub-P359_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P359, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 13:11:56 2026]
+Finished jobid: 133 (Rule: stereotaxy)
+146 of 151 steps (97%) done
+Select jobs to execute...
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 13:11:58 2026]
+Finished jobid: 154 (Rule: stereotaxy)
+147 of 151 steps (97%) done
+Execute 1 jobs...
+[Fri Aug  7 13:11:58 2026]
+localrule run_nnlm:
+    input: work/sub-P310/ses-preop/resample/sub-P310_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, /localscratch/.cache/autoafids/models/nnlm
+    output: work/sub-P310/ses-preop/afids-nnlm/sub-P310_ses-preop_acq-ax_run-01_dseg.nii.gz, work/sub-P310/ses-preop/afids-nnlm/sub-P310_ses-preop_acq-ax_run-01_coords.json
+    log: logs/sub-P310/ses-preop/sub-P310_ses-preop_acq-ax_run-01_nnlm.log
+    jobid: 83
+    reason: Missing output files: work/sub-P310/ses-preop/afids-nnlm/sub-P310_ses-preop_acq-ax_run-01_coords.json; Input files updated by another job: work/sub-P310/ses-preop/resample/sub-P310_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    wildcards: subject=P310, session=preop, acq=ax, run=01
+    threads: 2
+    resources: tmpdir=/localscratch/tmp, gpus=0, mem_mb=16000, mem_mib=15259
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/6ee0e8c060cc6e84267c0f99faf11702_
+[Fri Aug  7 13:14:58 2026]
+Finished jobid: 83 (Rule: run_nnlm)
+148 of 151 steps (98%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 13:14:58 2026]
+localrule nnlm_to_fcsv:
+    input: work/sub-P310/ses-preop/afids-nnlm/sub-P310_ses-preop_acq-ax_run-01_coords.json, work/sub-P310/ses-preop/resample/sub-P310_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz
+    output: sub-P310/ses-preop/afids-cnn/sub-P310_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    jobid: 82
+    reason: Missing output files: sub-P310/ses-preop/afids-cnn/sub-P310_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv; Input files updated by another job: work/sub-P310/ses-preop/resample/sub-P310_ses-preop_acq-ax_run-01_res-100_desc-zscore_T1w.nii.gz, work/sub-P310/ses-preop/afids-nnlm/sub-P310_ses-preop_acq-ax_run-01_coords.json
+    wildcards: subject=P310, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/9b0ebefefdaf8f4c3064162c9af16ee6_
+[Fri Aug  7 13:14:59 2026]
+Finished jobid: 82 (Rule: nnlm_to_fcsv)
+149 of 151 steps (99%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 13:14:59 2026]
+localrule stereotaxy:
+    input: sub-P310/ses-preop/afids-cnn/sub-P310_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    output: sub-P310/ses-preop/stereotaxy/sub-P310_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P310/ses-preop/stereotaxy/sub-P310_ses-preop_acq-ax_run-01_desc-cZI_mcp.fcsv, work/sub-P310/ses-preop/ACPCtransforms/sub-P310_ses-preop_acq-ax_run-01_desc-transform_ACPC.txt
+    jobid: 148
+    reason: Missing output files: sub-P310/ses-preop/stereotaxy/sub-P310_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv; Input files updated by another job: sub-P310/ses-preop/afids-cnn/sub-P310_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    wildcards: subject=P310, session=preop, acq=ax, run=01
+    resources: tmpdir=/localscratch/tmp
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+Activating conda environment: ../../../../localscratch/.cache/autoafids/conda/7e9941e9acc1503fed10fd844ea3118b_
+[Fri Aug  7 13:15:01 2026]
+Finished jobid: 148 (Rule: stereotaxy)
+150 of 151 steps (99%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Aug  7 13:15:01 2026]
+localrule all:
+    input: sub-P165/ses-preop/afids-cnn/sub-P165_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P167/ses-preop/afids-cnn/sub-P167_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P175/ses-preop/afids-cnn/sub-P175_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P182/ses-preop/afids-cnn/sub-P182_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P193/ses-preop/afids-cnn/sub-P193_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P202/ses-preop/afids-cnn/sub-P202_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P205/ses-preop/afids-cnn/sub-P205_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P213/ses-preop/afids-cnn/sub-P213_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P214/ses-preop/afids-cnn/sub-P214_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P221/ses-preop/afids-cnn/sub-P221_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P256/ses-preop/afids-cnn/sub-P256_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P277/ses-preop/afids-cnn/sub-P277_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P281/ses-preop/afids-cnn/sub-P281_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P289/ses-preop/afids-cnn/sub-P289_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P292/ses-preop/afids-cnn/sub-P292_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P293/ses-preop/afids-cnn/sub-P293_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P310/ses-preop/afids-cnn/sub-P310_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P328/ses-preop/afids-cnn/sub-P328_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P350/ses-preop/afids-cnn/sub-P350_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P352/ses-preop/afids-cnn/sub-P352_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P353/ses-preop/afids-cnn/sub-P353_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P355/ses-preop/afids-cnn/sub-P355_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P359/ses-preop/afids-cnn/sub-P359_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P367/ses-preop/afids-cnn/sub-P367_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P369/ses-preop/afids-cnn/sub-P369_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P374/ses-preop/afids-cnn/sub-P374_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P165/ses-preop/stereotaxy/sub-P165_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P167/ses-preop/stereotaxy/sub-P167_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P175/ses-preop/stereotaxy/sub-P175_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P182/ses-preop/stereotaxy/sub-P182_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P193/ses-preop/stereotaxy/sub-P193_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P202/ses-preop/stereotaxy/sub-P202_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P205/ses-preop/stereotaxy/sub-P205_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P213/ses-preop/stereotaxy/sub-P213_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P214/ses-preop/stereotaxy/sub-P214_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P221/ses-preop/stereotaxy/sub-P221_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P256/ses-preop/stereotaxy/sub-P256_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P277/ses-preop/stereotaxy/sub-P277_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P281/ses-preop/stereotaxy/sub-P281_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P289/ses-preop/stereotaxy/sub-P289_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P292/ses-preop/stereotaxy/sub-P292_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P293/ses-preop/stereotaxy/sub-P293_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P310/ses-preop/stereotaxy/sub-P310_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P328/ses-preop/stereotaxy/sub-P328_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P350/ses-preop/stereotaxy/sub-P350_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P352/ses-preop/stereotaxy/sub-P352_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P353/ses-preop/stereotaxy/sub-P353_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P355/ses-preop/stereotaxy/sub-P355_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P359/ses-preop/stereotaxy/sub-P359_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P367/ses-preop/stereotaxy/sub-P367_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P369/ses-preop/stereotaxy/sub-P369_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P374/ses-preop/stereotaxy/sub-P374_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv
+    jobid: 0
+    reason: Input files updated by another job: sub-P175/ses-preop/stereotaxy/sub-P175_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P353/ses-preop/stereotaxy/sub-P353_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P221/ses-preop/stereotaxy/sub-P221_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P167/ses-preop/stereotaxy/sub-P167_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P256/ses-preop/stereotaxy/sub-P256_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P352/ses-preop/stereotaxy/sub-P352_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P202/ses-preop/stereotaxy/sub-P202_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P310/ses-preop/afids-cnn/sub-P310_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P221/ses-preop/afids-cnn/sub-P221_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P310/ses-preop/stereotaxy/sub-P310_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P213/ses-preop/afids-cnn/sub-P213_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P214/ses-preop/stereotaxy/sub-P214_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P277/ses-preop/stereotaxy/sub-P277_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P369/ses-preop/stereotaxy/sub-P369_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P289/ses-preop/stereotaxy/sub-P289_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P292/ses-preop/afids-cnn/sub-P292_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P293/ses-preop/stereotaxy/sub-P293_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P167/ses-preop/afids-cnn/sub-P167_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P213/ses-preop/stereotaxy/sub-P213_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P374/ses-preop/afids-cnn/sub-P374_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P214/ses-preop/afids-cnn/sub-P214_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P352/ses-preop/afids-cnn/sub-P352_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P175/ses-preop/afids-cnn/sub-P175_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P292/ses-preop/stereotaxy/sub-P292_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P182/ses-preop/afids-cnn/sub-P182_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P367/ses-preop/stereotaxy/sub-P367_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P205/ses-preop/afids-cnn/sub-P205_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P202/ses-preop/afids-cnn/sub-P202_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P193/ses-preop/stereotaxy/sub-P193_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P277/ses-preop/afids-cnn/sub-P277_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P359/ses-preop/afids-cnn/sub-P359_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P256/ses-preop/afids-cnn/sub-P256_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P367/ses-preop/afids-cnn/sub-P367_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P350/ses-preop/stereotaxy/sub-P350_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P289/ses-preop/afids-cnn/sub-P289_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P374/ses-preop/stereotaxy/sub-P374_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P369/ses-preop/afids-cnn/sub-P369_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P205/ses-preop/stereotaxy/sub-P205_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P281/ses-preop/stereotaxy/sub-P281_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P182/ses-preop/stereotaxy/sub-P182_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P355/ses-preop/afids-cnn/sub-P355_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P328/ses-preop/stereotaxy/sub-P328_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P350/ses-preop/afids-cnn/sub-P350_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P293/ses-preop/afids-cnn/sub-P293_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P328/ses-preop/afids-cnn/sub-P328_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P359/ses-preop/stereotaxy/sub-P359_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P281/ses-preop/afids-cnn/sub-P281_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P353/ses-preop/afids-cnn/sub-P353_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv, sub-P355/ses-preop/stereotaxy/sub-P355_ses-preop_acq-ax_run-01_desc-cZI_native.fcsv, sub-P193/ses-preop/afids-cnn/sub-P193_ses-preop_acq-ax_run-01_desc-afidscnn-nnlm_afids.fcsv
+    resources: tmpdir=/localscratch/tmp
+[Fri Aug  7 13:15:01 2026]
+Finished jobid: 0 (Rule: all)
+151 of 151 steps (100%) done
+Complete log(s): /local/scratch/autoafids/patient_nnlm_output_v3/.snakemake/log/2026-08-07T113420.865367.snakemake.log
